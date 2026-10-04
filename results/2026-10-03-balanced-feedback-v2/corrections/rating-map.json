@@ -1,0 +1,290 @@
+[
+  {
+    "label": "answer-001",
+    "cell": "H-G2-P2-feedback-P2",
+    "case_id": "H-G2-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-002",
+    "cell": "H-U2-P2-feedback-P2",
+    "case_id": "H-U2-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-003",
+    "cell": "H-T3-P1-feedback-P1",
+    "case_id": "H-T3-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-004",
+    "cell": "H-U3-P2-feedback-P2",
+    "case_id": "H-U3-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-005",
+    "cell": "H-F2-P1-feedback-P1",
+    "case_id": "H-F2-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-006",
+    "cell": "H-U4-P2-feedback-P2",
+    "case_id": "H-U4-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-007",
+    "cell": "H-U1-P2-feedback-P2",
+    "case_id": "H-U1-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-008",
+    "cell": "H-R2-P1-feedback-P1",
+    "case_id": "H-R2-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-009",
+    "cell": "H-R4-P1-feedback-P1",
+    "case_id": "H-R4-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-010",
+    "cell": "H-T2-P2-feedback-P2",
+    "case_id": "H-T2-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-011",
+    "cell": "H-G4-P1-feedback-P1",
+    "case_id": "H-G4-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-012",
+    "cell": "H-T4-P1-feedback-P1",
+    "case_id": "H-T4-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-013",
+    "cell": "H-F1-P1-feedback-P1",
+    "case_id": "H-F1-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-014",
+    "cell": "H-T4-P2-feedback-P2",
+    "case_id": "H-T4-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-015",
+    "cell": "H-R1-P1-feedback-P1",
+    "case_id": "H-R1-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-016",
+    "cell": "H-G4-P2-feedback-P2",
+    "case_id": "H-G4-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-017",
+    "cell": "H-R1-P2-feedback-P2",
+    "case_id": "H-R1-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-018",
+    "cell": "H-S1-P2-feedback-P2",
+    "case_id": "H-S1-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-019",
+    "cell": "H-S1-P1-feedback-P1",
+    "case_id": "H-S1-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-020",
+    "cell": "H-S3-P1-feedback-P1",
+    "case_id": "H-S3-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-021",
+    "cell": "H-G2-P1-feedback-P1",
+    "case_id": "H-G2-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-022",
+    "cell": "H-R3-P2-feedback-P2",
+    "case_id": "H-R3-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-023",
+    "cell": "H-G1-P1-feedback-P1",
+    "case_id": "H-G1-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-024",
+    "cell": "H-S2-P1-feedback-P1",
+    "case_id": "H-S2-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-025",
+    "cell": "H-S4-P2-feedback-P2",
+    "case_id": "H-S4-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-026",
+    "cell": "H-G3-P1-feedback-P1",
+    "case_id": "H-G3-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-027",
+    "cell": "H-U4-P1-feedback-P1",
+    "case_id": "H-U4-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-028",
+    "cell": "H-U2-P1-feedback-P1",
+    "case_id": "H-U2-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-029",
+    "cell": "H-F4-P2-feedback-P2",
+    "case_id": "H-F4-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-030",
+    "cell": "H-G3-P2-feedback-P2",
+    "case_id": "H-G3-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-031",
+    "cell": "H-R2-P2-feedback-P2",
+    "case_id": "H-R2-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-032",
+    "cell": "H-S4-P1-feedback-P1",
+    "case_id": "H-S4-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-033",
+    "cell": "H-T1-P1-feedback-P1",
+    "case_id": "H-T1-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-034",
+    "cell": "H-U3-P1-feedback-P1",
+    "case_id": "H-U3-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-035",
+    "cell": "H-R4-P2-feedback-P2",
+    "case_id": "H-R4-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-036",
+    "cell": "H-S3-P2-feedback-P2",
+    "case_id": "H-S3-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-037",
+    "cell": "H-T2-P1-feedback-P1",
+    "case_id": "H-T2-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-038",
+    "cell": "H-F1-P2-feedback-P2",
+    "case_id": "H-F1-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-039",
+    "cell": "H-T3-P2-feedback-P2",
+    "case_id": "H-T3-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-040",
+    "cell": "H-R3-P1-feedback-P1",
+    "case_id": "H-R3-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-041",
+    "cell": "H-S2-P2-feedback-P2",
+    "case_id": "H-S2-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-042",
+    "cell": "H-F3-P2-feedback-P2",
+    "case_id": "H-F3-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-043",
+    "cell": "H-F3-P1-feedback-P1",
+    "case_id": "H-F3-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-044",
+    "cell": "H-U1-P1-feedback-P1",
+    "case_id": "H-U1-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-045",
+    "cell": "H-F2-P2-feedback-P2",
+    "case_id": "H-F2-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-046",
+    "cell": "H-G1-P2-feedback-P2",
+    "case_id": "H-G1-P2-feedback",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-047",
+    "cell": "H-F4-P1-feedback-P1",
+    "case_id": "H-F4-P1-feedback",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-048",
+    "cell": "H-T1-P2-feedback-P2",
+    "case_id": "H-T1-P2-feedback",
+    "condition": "P2"
+  }
+]

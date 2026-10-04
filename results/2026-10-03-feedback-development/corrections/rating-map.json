@@ -1,0 +1,110 @@
+[
+  {
+    "label": "answer-001",
+    "cell": "C-S1-JEV-P1",
+    "case_id": "C-S1-JEV",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-002",
+    "cell": "C-U1-CODE-P1",
+    "case_id": "C-U1-CODE",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-003",
+    "cell": "C-S1-CODE-P1",
+    "case_id": "C-S1-CODE",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-004",
+    "cell": "C-G1-SELF-P1",
+    "case_id": "C-G1-SELF",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-005",
+    "cell": "C-T1-SELF-P1",
+    "case_id": "C-T1-SELF",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-006",
+    "cell": "C-T1-JEV-P1",
+    "case_id": "C-T1-JEV",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-007",
+    "cell": "C-U1-JEV-P1",
+    "case_id": "C-U1-JEV",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-008",
+    "cell": "C-T1-CODE-P1",
+    "case_id": "C-T1-CODE",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-009",
+    "cell": "C-F1-JEV-P1",
+    "case_id": "C-F1-JEV",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-010",
+    "cell": "C-F1-CODE-P1",
+    "case_id": "C-F1-CODE",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-011",
+    "cell": "C-S1-SELF-P1",
+    "case_id": "C-S1-SELF",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-012",
+    "cell": "C-R1-SELF-P1",
+    "case_id": "C-R1-SELF",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-013",
+    "cell": "C-F1-SELF-P1",
+    "case_id": "C-F1-SELF",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-014",
+    "cell": "C-G1-JEV-P1",
+    "case_id": "C-G1-JEV",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-015",
+    "cell": "C-U1-SELF-P1",
+    "case_id": "C-U1-SELF",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-016",
+    "cell": "C-G1-CODE-P1",
+    "case_id": "C-G1-CODE",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-017",
+    "cell": "C-R1-JEV-P1",
+    "case_id": "C-R1-JEV",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-018",
+    "cell": "C-R1-CODE-P1",
+    "case_id": "C-R1-CODE",
+    "condition": "P1"
+  }
+]

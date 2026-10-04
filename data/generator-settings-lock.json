@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "model": "ornith-aq1.5:35b",
+  "digest": "3095dc99a4b4217ce6aa49a1d4d00aeb612b9361185d84eeb18fa013a70ca69d",
+  "think": true,
+  "options": {"temperature": 0, "seed": 42, "num_predict": 8192, "num_ctx": 16384, "top_k": 20, "top_p": 0.95},
+  "scope": "All new project Ornith evaluation runs use the locked collector. Historical collectors remain frozen for provenance only. Truncations remain possible and receive no completion credit."
+}

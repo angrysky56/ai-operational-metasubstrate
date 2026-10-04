@@ -1,0 +1,434 @@
+[
+  {
+    "label": "answer-001",
+    "cell": "F02-P0",
+    "case_id": "F02",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-002",
+    "cell": "T01-P1",
+    "case_id": "T01",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-003",
+    "cell": "U04-P0",
+    "case_id": "U04",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-004",
+    "cell": "S04-P1",
+    "case_id": "S04",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-005",
+    "cell": "R03-P0",
+    "case_id": "R03",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-006",
+    "cell": "U02-P1",
+    "case_id": "U02",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-007",
+    "cell": "S03-P2",
+    "case_id": "S03",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-008",
+    "cell": "S03-P0",
+    "case_id": "S03",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-009",
+    "cell": "U02-P0",
+    "case_id": "U02",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-010",
+    "cell": "F01-P0",
+    "case_id": "F01",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-011",
+    "cell": "T03-P2",
+    "case_id": "T03",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-012",
+    "cell": "U03-P0",
+    "case_id": "U03",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-013",
+    "cell": "F04-P1",
+    "case_id": "F04",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-014",
+    "cell": "T02-P0",
+    "case_id": "T02",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-015",
+    "cell": "R04-P2",
+    "case_id": "R04",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-016",
+    "cell": "U03-P1",
+    "case_id": "U03",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-017",
+    "cell": "U01-P1",
+    "case_id": "U01",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-018",
+    "cell": "U01-P0",
+    "case_id": "U01",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-019",
+    "cell": "T04-P0",
+    "case_id": "T04",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-020",
+    "cell": "G04-P1",
+    "case_id": "G04",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-021",
+    "cell": "T02-P1",
+    "case_id": "T02",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-022",
+    "cell": "F04-P2",
+    "case_id": "F04",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-023",
+    "cell": "R04-P1",
+    "case_id": "R04",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-024",
+    "cell": "G04-P2",
+    "case_id": "G04",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-025",
+    "cell": "G03-P1",
+    "case_id": "G03",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-026",
+    "cell": "T04-P1",
+    "case_id": "T04",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-027",
+    "cell": "R03-P1",
+    "case_id": "R03",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-028",
+    "cell": "R02-P2",
+    "case_id": "R02",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-029",
+    "cell": "G03-P0",
+    "case_id": "G03",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-030",
+    "cell": "T02-P2",
+    "case_id": "T02",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-031",
+    "cell": "U01-P2",
+    "case_id": "U01",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-032",
+    "cell": "T01-P0",
+    "case_id": "T01",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-033",
+    "cell": "R02-P1",
+    "case_id": "R02",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-034",
+    "cell": "F01-P1",
+    "case_id": "F01",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-035",
+    "cell": "G01-P1",
+    "case_id": "G01",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-036",
+    "cell": "U04-P2",
+    "case_id": "U04",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-037",
+    "cell": "S02-P2",
+    "case_id": "S02",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-038",
+    "cell": "S02-P0",
+    "case_id": "S02",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-039",
+    "cell": "U04-P1",
+    "case_id": "U04",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-040",
+    "cell": "F01-P2",
+    "case_id": "F01",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-041",
+    "cell": "R01-P2",
+    "case_id": "R01",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-042",
+    "cell": "S01-P0",
+    "case_id": "S01",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-043",
+    "cell": "G01-P0",
+    "case_id": "G01",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-044",
+    "cell": "S01-P2",
+    "case_id": "S01",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-045",
+    "cell": "R04-P0",
+    "case_id": "R04",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-046",
+    "cell": "T04-P2",
+    "case_id": "T04",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-047",
+    "cell": "F02-P2",
+    "case_id": "F02",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-048",
+    "cell": "G03-P2",
+    "case_id": "G03",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-049",
+    "cell": "U02-P2",
+    "case_id": "U02",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-050",
+    "cell": "S04-P2",
+    "case_id": "S04",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-051",
+    "cell": "R01-P0",
+    "case_id": "R01",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-052",
+    "cell": "G04-P0",
+    "case_id": "G04",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-053",
+    "cell": "F04-P0",
+    "case_id": "F04",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-054",
+    "cell": "F03-P0",
+    "case_id": "F03",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-055",
+    "cell": "T03-P0",
+    "case_id": "T03",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-056",
+    "cell": "T01-P2",
+    "case_id": "T01",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-057",
+    "cell": "T03-P1",
+    "case_id": "T03",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-058",
+    "cell": "S04-P0",
+    "case_id": "S04",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-059",
+    "cell": "G02-P2",
+    "case_id": "G02",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-060",
+    "cell": "R02-P0",
+    "case_id": "R02",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-061",
+    "cell": "R03-P2",
+    "case_id": "R03",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-062",
+    "cell": "S03-P1",
+    "case_id": "S03",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-063",
+    "cell": "F02-P1",
+    "case_id": "F02",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-064",
+    "cell": "F03-P1",
+    "case_id": "F03",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-065",
+    "cell": "U03-P2",
+    "case_id": "U03",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-066",
+    "cell": "S01-P1",
+    "case_id": "S01",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-067",
+    "cell": "F03-P2",
+    "case_id": "F03",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-068",
+    "cell": "G02-P0",
+    "case_id": "G02",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-069",
+    "cell": "R01-P1",
+    "case_id": "R01",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-070",
+    "cell": "S02-P1",
+    "case_id": "S02",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-071",
+    "cell": "G01-P2",
+    "case_id": "G01",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-072",
+    "cell": "G02-P1",
+    "case_id": "G02",
+    "condition": "P1"
+  }
+]

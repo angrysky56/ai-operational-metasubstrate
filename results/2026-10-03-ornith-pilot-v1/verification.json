@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-10-04T00:37:05.273441+00:00",
+  "checks": {
+    "data/pilot-v1.json": true,
+    "frozen-pilot-v1.json": true,
+    "docs/pilot-v1-protocol.md": true,
+    "frozen-pilot-v1-protocol.md": true,
+    "scripts/build_pilot.py": true,
+    "frozen-build_pilot.py": true,
+    "scripts/run_ollama.py": true,
+    "frozen-run_ollama.py": true,
+    "scripts/analyze_pilot.py": true,
+    "frozen-analyze_pilot.py": true,
+    "saved_dataset": true,
+    "original_white_paper": true,
+    "ratings_hash": true,
+    "ratings_coverage": true,
+    "analysis_bound_to_ratings": true,
+    "complete_unique_cells": true,
+    "freeze_before_generation": true,
+    "rating_seal_before_analysis_file": true,
+    "exact_request_messages": true,
+    "local_markdown_links": true
+  },
+  "missing_links": [],
+  "all_pass": true,
+  "tests": "10 runner/paired-analysis tests passed; postcollection summary executed on complete run"
+}

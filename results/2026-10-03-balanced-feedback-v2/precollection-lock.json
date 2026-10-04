@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-04T04:37:26.284306+00:00",
+  "mechanism_version": 2,
+  "source_hashes": {
+    "scripts/run_balanced_feedback.py": "c6557b1ae21be2f83320166e382e9986e5affd96b4758d6b9ed5b8e6e0d809d3",
+    "scripts/run_locked_ollama.py": "20c52610b9188c545024e27725bc198502a31a8f637af82d25f5ccfd2a7ed728",
+    "scripts/run_ollama.py": "2f6b61d01b77f140670a31992266e7332e3d16f2fa7c4cd5a696c5e9af85634b",
+    "scripts/feedback_harness.py": "b241c18b5d540ce7bab62e929e2f4949268f8a98c7efe60998af9969c7c2e668",
+    "scripts/jev_review_records.py": "c4978b832a663cf5f5c01403b918ab20d404383bd0b2a6ab587c6db5df1740ed",
+    "scripts/visible_plan_validator.py": "bb00d826cbb2cbc0d0cdc2b61567cb71fd6c6efa17f1131e2f34f230ea9b926a",
+    "scripts/grade_challenge.py": "fa5b57cecf044e1b5e994272224748a00a60ca94266b3922844f600df3fd0872",
+    "scripts/analyze_challenge_test.py": "33c3f5377b2bed5729b72363d6e83a60fe1b66d820b4b5ebc85f86e280804f00",
+    "data/challenge-test-v1.json": "4a08df921ebaf3f8cd05614bff51d2abc34aacad5217f212106667ea782ede0f",
+    "data/visible-policy-headers.json": "4e547207e7c93ac401a89159f553aebc46ca9bc27ea7071520c9fde5900bd03b",
+    "data/generator-settings-lock.json": "2f1fa8cc237bb0cff2e25661f4e94c2017804e86e2534c8bead43bbc3b379d78",
+    "data/pre-output-checks-v1.txt": "95d604a6478404a4714affc00e278b4579a084887ed68388b19441af89c1408c",
+    "harness/jev-client.ts": "c36733722bb683131b38393c2058fe80906166ddc2b4ac212d40bfd6352c8b50",
+    "harness/package.json": "ddc482277d5b3495c50994f8d714f5576ff53eee7217552fff19e6d0c4a6d405",
+    "harness/package-lock.json": "c7261b57b7a3daf557f5daef5c77de26d4b1148ece163a2dcc8fd59bdd5ddb23",
+    "docs/balanced-feedback-v2-protocol.md": "0a6bbfd739678979ab8603cbc6d86a05ca87fa68889056ccd7bbf8e1ad32391b"
+  },
+  "actor_attempt_limit": 96,
+  "semantic_item_limit": 192,
+  "settings": {
+    "schema": 1,
+    "model": "ornith-aq1.5:35b",
+    "digest": "3095dc99a4b4217ce6aa49a1d4d00aeb612b9361185d84eeb18fa013a70ca69d",
+    "think": true,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 8192,
+      "num_ctx": 16384,
+      "top_k": 20,
+      "top_p": 0.95
+    },
+    "scope": "All new project Ornith evaluation runs use the locked collector. Historical collectors remain frozen for provenance only. Truncations remain possible and receive no completion credit."
+  },
+  "capability": {
+    "name": "omkt_payload_consistency",
+    "version": 1,
+    "hash": "3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544"
+  },
+  "conditions": [
+    "P1",
+    "P2"
+  ],
+  "case_count": 24
+}

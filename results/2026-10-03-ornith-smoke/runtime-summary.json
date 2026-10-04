@@ -1,0 +1,35 @@
+{
+  "scope": "development_smoke_only",
+  "attempts": 18,
+  "complete": 18,
+  "errors": 0,
+  "truncated": 0,
+  "total_request_seconds": 271.09517513692845,
+  "warm_response_median_seconds": 7.109712759964168,
+  "first_load_seconds": 98.114636657,
+  "conditions": {
+    "P0": {
+      "responses": 6,
+      "mean_final_answer_words": 113,
+      "mean_generated_tokens": 157.16666666666666
+    },
+    "P1": {
+      "responses": 6,
+      "mean_final_answer_words": 181.33333333333334,
+      "mean_generated_tokens": 250.5
+    },
+    "P2": {
+      "responses": 6,
+      "mean_final_answer_words": 188.33333333333334,
+      "mean_generated_tokens": 258.8333333333333
+    }
+  },
+  "prompt_token_differences_P2_minus_P1": {
+    "D1": 4,
+    "D2": 4,
+    "D3": 4,
+    "D4": 4,
+    "D5": 4,
+    "D6": 4
+  }
+}

@@ -1,0 +1,1158 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"runId\":\"84a4262f-c685-4b7c-a1ac-695b24a64411\",\"status\":\"complete\",\"manifest\":{\"createdAt\":\"2026-10-04T03:03:33.286Z\",\"capability\":{\"name\":\"claim_router\",\"version\":1,\"hash\":\"0eb1ec6a11514506c346c6e77bcabb2efc0813f1dd7a34c6813facf0a8108788\",\"definition\":{\"name\":\"claim_router\",\"description\":\"Route a claim to the check that suits how it was reasoned (Peirce: deduction, induction, abduction), using all four TypeSafe patterns: one fan-out stage asks every question at once; composites weight the warning signs; confidence gates send unclear cases to a second opinion; routes name the next check for the host to run. item = {claim, basis, action?} where action is what will be done if the claim is believed. The server only labels; the host runs the check. Judges wording and stated basis, not truth.\",\"stages\":[{\"id\":\"triage\",\"questions\":{\"absence_as_evidence\":{\"type\":\"noul\",\"instructions\":\"Does item.basis support item.claim mainly by not having seen, noticed, or found something, without describing a search thorough enough that it would have found it if it existed?\",\"criteria\":{\"true\":\"item.basis rests on 'I have not seen / did not notice / am not aware of' something, with no systematic search described.\",\"false\":\"item.basis reports positive observations, or describes a search that would have found the thing if it existed.\"}},\"certainty\":{\"type\":\"score\",\"instructions\":\"How much certainty does the wording of item.claim itself express? Look only at item.claim's own words.\",\"criteria\":[\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"Probable: probably, likely, suggests, plausibly, most likely\",\"Stated as plain fact with no hedge\",\"Absolute: always, never, certainly, proves, impossible, nothing else could\"]},\"mode\":{\"type\":\"choice\",\"instructions\":\"How does item.claim relate to item.basis? Judge the logical relationship, not the topic or the confidence words.\",\"criteria\":{\"abduction\":\"item.basis reports an observation or symptom, and item.claim proposes a cause, explanation, or hidden state that would account for it.\",\"deduction\":\"item.basis states a general rule plus a specific case, and item.claim is exactly what that rule implies for that case. The claim would be necessarily true if the basis is true.\",\"induction\":\"item.basis reports observed instances, counts, tests, or measurements, and item.claim generalizes them into a pattern, rule, or prediction about cases not observed.\",\"recommendation\":\"item.claim says what should be done, decided, or how something should be read or treated, rather than stating what is true.\",\"unsupported\":\"item.basis is empty, says '(none)', or gives no reason that actually connects to item.claim.\"}},\"overclaim\":{\"type\":\"noul\",\"instructions\":\"Is item.claim worded with more certainty than item.basis can license? Rules: a strict derivation from a stated general rule and case may be stated as certain. A generalization from observed instances may be stated at most as probable, and less so the fewer the instances. A proposed explanation of an observation may be stated at most as plausible, never as the only possibility. A recommendation is fine if item.basis gives a reason for it. A claim with no connecting reason may not be stated as fact at all.\",\"criteria\":{\"true\":\"item.claim asserts as fact, certainty, 'always', or 'the only explanation' something that item.basis only makes probable, plausible, or does not support.\",\"false\":\"item.claim's wording is at or below the confidence that item.basis supports, or it is a recommendation that item.basis gives a reason for.\"}},\"scope_gap\":{\"type\":\"noul\",\"instructions\":\"Is item.claim about a broader or different subject than the thing item.basis actually measured or observed? Example: the basis measured one component, one tool, one channel, one machine, or one sample, while the claim speaks about a whole system, all users, or a different component. Compare the subject of item.claim with the subject of item.basis word by word.\",\"criteria\":{\"true\":\"The subject of item.claim is wider than, or different from, what item.basis measured or observed.\",\"false\":\"item.claim is about the same thing item.basis measured or observed.\"}},\"stakes\":{\"type\":\"score\",\"instructions\":\"If item.claim were false and someone went ahead with item.action (or relied on item.claim, if no action is given), how bad would the result be?\",\"criteria\":[\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"]}}}],\"composites\":{\"priority\":{\"description\":\"What to check first: warning signs plus stakes.\",\"terms\":[{\"stage\":\"triage\",\"question\":\"overclaim\",\"weight\":0.3},{\"stage\":\"triage\",\"question\":\"scope_gap\",\"weight\":0.2},{\"stage\":\"triage\",\"question\":\"absence_as_evidence\",\"weight\":0.2},{\"stage\":\"triage\",\"question\":\"stakes\",\"weight\":0.3}]},\"warrant_risk\":{\"description\":\"How far the wording outruns the stated basis, weighted toward the clearest signals.\",\"terms\":[{\"stage\":\"triage\",\"question\":\"overclaim\",\"weight\":0.4},{\"stage\":\"triage\",\"question\":\"scope_gap\",\"weight\":0.3},{\"stage\":\"triage\",\"question\":\"absence_as_evidence\",\"weight\":0.3}]}},\"routes\":[{\"id\":\"ask_for_basis\",\"when\":[{\"stage\":\"triage\",\"question\":\"mode\",\"op\":\"eq\",\"value\":\"unsupported\"}],\"description\":\"No reason given. Ask for or find the basis before anything else.\"},{\"id\":\"search_first\",\"when\":[{\"stage\":\"triage\",\"question\":\"absence_as_evidence\",\"op\":\"gte\",\"value\":0.6}],\"description\":\"Rests on not having seen something. Run a search that would find it (docs, web, repo) before asserting.\"},{\"id\":\"second_opinion\",\"when\":[{\"stage\":\"triage\",\"question\":\"mode\",\"op\":\"lte\",\"value\":0.45,\"field\":\"confidence\"}],\"description\":\"Jev cannot tell what kind of reasoning this is. Have another judge or a person classify it.\"},{\"id\":\"accept\",\"when\":[{\"composite\":\"warrant_risk\",\"op\":\"lte\",\"value\":0.35},{\"stage\":\"triage\",\"question\":\"stakes\",\"op\":\"lte\",\"value\":0.8}],\"description\":\"Wording fits the basis and little is at stake. No further check.\"},{\"id\":\"prove\",\"when\":[{\"stage\":\"triage\",\"question\":\"mode\",\"op\":\"eq\",\"value\":\"deduction\"}],\"description\":\"Deduction: check the derivation with a prover (mcp-logic prove, efh-core verify_implication) or by re-deriving it.\"},{\"id\":\"check_sample\",\"when\":[{\"stage\":\"triage\",\"question\":\"mode\",\"op\":\"eq\",\"value\":\"induction\"}],\"description\":\"Induction: check sample size, representativeness, and whether the claim is hedged to match.\"},{\"id\":\"test_rivals\",\"when\":[{\"stage\":\"triage\",\"question\":\"mode\",\"op\":\"eq\",\"value\":\"abduction\"}],\"description\":\"Abduction: list rival explanations, then run evidence_stance with them as items and the observations in context.\"},{\"id\":\"check_reasons\",\"when\":[{\"stage\":\"triage\",\"question\":\"mode\",\"op\":\"eq\",\"value\":\"recommendation\"}],\"description\":\"Recommendation: check that the stated reasons actually support the action and its stakes.\"},{\"id\":\"manual_review\",\"description\":\"Nothing else matched.\"}],\"rank\":{\"composite\":\"priority\",\"direction\":\"desc\"},\"notes\":\"v1, 2026-09-22. Built from inference_warrant v3 questions (verbatim) plus a stakes score. Findings carried over: overclaim fires on most flat statements, so it is weighted and not a route by itself; absence_as_evidence was the cleanest signal, so it routes directly; rivals cannot be judged without supplied candidates, so abduction routes to test_rivals (host lists rivals, evidence_stance judges them). Thresholds (0.6, 0.45, 0.35, 0.8) are authored guesses to be evaluated.\"},\"createdAt\":\"2026-09-23T02:57:45.397Z\",\"validation\":\"unvalidated\"},\"context\":{},\"provider\":\"typesafe\",\"model\":\"jev-latest\",\"plannedCalls\":3,\"options\":{\"maxCalls\":3,\"useCache\":false}},\"summary\":{\"modelCalls\":3,\"httpAttempts\":3,\"cacheHits\":0,\"reportedCostUsd\":0,\"unreportedCosts\":3,\"inputTokens\":3926,\"outputTokens\":439,\"totalItems\":3,\"completedItems\":3,\"selectedIds\":[\"overgeneralization_control\",\"scoped_settings_result\",\"deterministic_failure\"],\"routes\":{\"prove\":[\"deterministic_failure\"],\"check_sample\":[\"overgeneralization_control\"],\"second_opinion\":[\"scoped_settings_result\"]}},\"items\":[{\"id\":\"scoped_settings_result\",\"data\":{\"claim\":\"This local development check motivates testing thinking-enabled settings before another framing study. It does not establish a benefit of self-model framing.\",\"basis\":\"The recorded P0-only experiment held context fixed, crossed thinking mode and generation cap, and used three previously studied development cases. Thinking with the larger cap repaired the premise and maintenance plans, while the simulator plan remained wrong. The experiment did not compare P1 with P2 and used only one installed model.\",\"action\":\"Validate thinking-enabled settings across development families, then freeze a separate matched framing comparison.\"},\"result\":{\"id\":\"scoped_settings_result\",\"status\":\"complete\",\"stages\":{\"triage\":{\"status\":\"complete\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.25},\"certainty\":{\"type\":\"score\",\"score\":2.02,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0.01,\"2\":0.95,\"3\":0.04},\"confidence\":0.95},\"mode\":{\"type\":\"choice\",\"choice\":\"recommendation\",\"probabilities\":{\"recommendation\":0.41,\"unsupported\":0.01,\"abduction\":0.04,\"deduction\":0.3,\"induction\":0.24},\"confidence\":0.26},\"overclaim\":{\"type\":\"noul\",\"noul\":0.32},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.43},\"stakes\":{\"type\":\"score\",\"score\":0.99,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.08,\"1\":0.85,\"2\":0.07},\"confidence\":0.78}},\"cached\":false}},\"selected\":true,\"rank\":0.38049999999999995,\"composites\":{\"priority\":0.38049999999999995,\"warrant_risk\":0.332},\"route\":\"second_opinion\"},\"events\":[{\"stage\":\"triage\",\"request\":{\"model\":\"jev-latest\",\"state\":{\"item\":{\"claim\":\"This local development check motivates testing thinking-enabled settings before another framing study. It does not establish a benefit of self-model framing.\",\"basis\":\"The recorded P0-only experiment held context fixed, crossed thinking mode and generation cap, and used three previously studied development cases. Thinking with the larger cap repaired the premise and maintenance plans, while the simulator plan remained wrong. The experiment did not compare P1 with P2 and used only one installed model.\",\"action\":\"Validate thinking-enabled settings across development families, then freeze a separate matched framing comparison.\"},\"context\":{},\"prior\":{}},\"questions\":{\"absence_as_evidence\":{\"type\":\"noul\",\"instructions\":\"Does item.basis support item.claim mainly by not having seen, noticed, or found something, without describing a search thorough enough that it would have found it if it existed?\",\"criteria\":{\"true\":\"item.basis rests on 'I have not seen / did not notice / am not aware of' something, with no systematic search described.\",\"false\":\"item.basis reports positive observations, or describes a search that would have found the thing if it existed.\"}},\"certainty\":{\"type\":\"score\",\"instructions\":\"How much certainty does the wording of item.claim itself express? Look only at item.claim's own words.\",\"criteria\":[\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"Probable: probably, likely, suggests, plausibly, most likely\",\"Stated as plain fact with no hedge\",\"Absolute: always, never, certainly, proves, impossible, nothing else could\"]},\"mode\":{\"type\":\"choice\",\"instructions\":\"How does item.claim relate to item.basis? Judge the logical relationship, not the topic or the confidence words.\",\"criteria\":{\"abduction\":\"item.basis reports an observation or symptom, and item.claim proposes a cause, explanation, or hidden state that would account for it.\",\"deduction\":\"item.basis states a general rule plus a specific case, and item.claim is exactly what that rule implies for that case. The claim would be necessarily true if the basis is true.\",\"induction\":\"item.basis reports observed instances, counts, tests, or measurements, and item.claim generalizes them into a pattern, rule, or prediction about cases not observed.\",\"recommendation\":\"item.claim says what should be done, decided, or how something should be read or treated, rather than stating what is true.\",\"unsupported\":\"item.basis is empty, says '(none)', or gives no reason that actually connects to item.claim.\"}},\"overclaim\":{\"type\":\"noul\",\"instructions\":\"Is item.claim worded with more certainty than item.basis can license? Rules: a strict derivation from a stated general rule and case may be stated as certain. A generalization from observed instances may be stated at most as probable, and less so the fewer the instances. A proposed explanation of an observation may be stated at most as plausible, never as the only possibility. A recommendation is fine if item.basis gives a reason for it. A claim with no connecting reason may not be stated as fact at all.\",\"criteria\":{\"true\":\"item.claim asserts as fact, certainty, 'always', or 'the only explanation' something that item.basis only makes probable, plausible, or does not support.\",\"false\":\"item.claim's wording is at or below the confidence that item.basis supports, or it is a recommendation that item.basis gives a reason for.\"}},\"scope_gap\":{\"type\":\"noul\",\"instructions\":\"Is item.claim about a broader or different subject than the thing item.basis actually measured or observed? Example: the basis measured one component, one tool, one channel, one machine, or one sample, while the claim speaks about a whole system, all users, or a different component. Compare the subject of item.claim with the subject of item.basis word by word.\",\"criteria\":{\"true\":\"The subject of item.claim is wider than, or different from, what item.basis measured or observed.\",\"false\":\"item.claim is about the same thing item.basis measured or observed.\"}},\"stakes\":{\"type\":\"score\",\"instructions\":\"If item.claim were false and someone went ahead with item.action (or relied on item.claim, if no action is given), how bad would the result be?\",\"criteria\":[\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"]}}},\"fingerprint\":\"7d85712f09a631e771d51fd822d623ab8ccb8445bc608f71aca7ccb842ef28e0\",\"cached\":false,\"response\":{\"model\":\"jev-1.13.0\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.25},\"certainty\":{\"type\":\"score\",\"score\":2.02,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0.01,\"2\":0.95,\"3\":0.04},\"confidence\":0.95},\"mode\":{\"type\":\"choice\",\"choice\":\"recommendation\",\"probabilities\":{\"recommendation\":0.41,\"unsupported\":0.01,\"abduction\":0.04,\"deduction\":0.3,\"induction\":0.24},\"confidence\":0.26},\"overclaim\":{\"type\":\"noul\",\"noul\":0.32},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.43},\"stakes\":{\"type\":\"score\",\"score\":0.99,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.08,\"1\":0.85,\"2\":0.07},\"confidence\":0.78}},\"usage\":{\"input_tokens\":1334,\"output_tokens\":147}},\"rawResponse\":{\"model\":\"jev-1.13.0\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.25},\"certainty\":{\"type\":\"score\",\"score\":2.02,\"confidence\":0.95,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0.01,\"2\":0.95,\"3\":0.04}},\"mode\":{\"type\":\"choice\",\"choice\":\"recommendation\",\"confidence\":0.26,\"probabilities\":{\"recommendation\":0.41,\"unsupported\":0.01,\"abduction\":0.04,\"deduction\":0.3,\"induction\":0.24}},\"overclaim\":{\"type\":\"noul\",\"noul\":0.32},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.43},\"stakes\":{\"type\":\"score\",\"score\":0.99,\"confidence\":0.78,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.08,\"1\":0.85,\"2\":0.07}}},\"usage\":{\"input_tokens\":1334,\"output_tokens\":147}},\"attempts\":1,\"elapsedMs\":571.471765}]},{\"id\":\"overgeneralization_control\",\"data\":{\"claim\":\"Self-model framing generally makes advanced models worse at reasoning.\",\"basis\":\"One non-thinking local derivative performed worse under P2 than P1 on a small author-designed structured bank. There was no independent review, independent model replication or thinking-enabled framing comparison.\",\"action\":\"Reject self-model framing for advanced models in general.\"},\"result\":{\"id\":\"overgeneralization_control\",\"status\":\"complete\",\"stages\":{\"triage\":{\"status\":\"complete\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.31},\"certainty\":{\"type\":\"score\",\"score\":1.83,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0.18,\"2\":0.81,\"3\":0.01},\"confidence\":0.81},\"mode\":{\"type\":\"choice\",\"choice\":\"induction\",\"probabilities\":{\"recommendation\":0.03,\"unsupported\":0.03,\"abduction\":0,\"deduction\":0,\"induction\":0.94},\"confidence\":0.93},\"overclaim\":{\"type\":\"noul\",\"noul\":0.94},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.97},\"stakes\":{\"type\":\"score\",\"score\":1.17,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.08,\"1\":0.67,\"2\":0.25},\"confidence\":0.51}},\"cached\":false}},\"selected\":true,\"rank\":0.7135,\"composites\":{\"priority\":0.7135,\"warrant_risk\":0.76},\"route\":\"check_sample\"},\"events\":[{\"stage\":\"triage\",\"request\":{\"model\":\"jev-latest\",\"state\":{\"item\":{\"claim\":\"Self-model framing generally makes advanced models worse at reasoning.\",\"basis\":\"One non-thinking local derivative performed worse under P2 than P1 on a small author-designed structured bank. There was no independent review, independent model replication or thinking-enabled framing comparison.\",\"action\":\"Reject self-model framing for advanced models in general.\"},\"context\":{},\"prior\":{}},\"questions\":{\"absence_as_evidence\":{\"type\":\"noul\",\"instructions\":\"Does item.basis support item.claim mainly by not having seen, noticed, or found something, without describing a search thorough enough that it would have found it if it existed?\",\"criteria\":{\"true\":\"item.basis rests on 'I have not seen / did not notice / am not aware of' something, with no systematic search described.\",\"false\":\"item.basis reports positive observations, or describes a search that would have found the thing if it existed.\"}},\"certainty\":{\"type\":\"score\",\"instructions\":\"How much certainty does the wording of item.claim itself express? Look only at item.claim's own words.\",\"criteria\":[\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"Probable: probably, likely, suggests, plausibly, most likely\",\"Stated as plain fact with no hedge\",\"Absolute: always, never, certainly, proves, impossible, nothing else could\"]},\"mode\":{\"type\":\"choice\",\"instructions\":\"How does item.claim relate to item.basis? Judge the logical relationship, not the topic or the confidence words.\",\"criteria\":{\"abduction\":\"item.basis reports an observation or symptom, and item.claim proposes a cause, explanation, or hidden state that would account for it.\",\"deduction\":\"item.basis states a general rule plus a specific case, and item.claim is exactly what that rule implies for that case. The claim would be necessarily true if the basis is true.\",\"induction\":\"item.basis reports observed instances, counts, tests, or measurements, and item.claim generalizes them into a pattern, rule, or prediction about cases not observed.\",\"recommendation\":\"item.claim says what should be done, decided, or how something should be read or treated, rather than stating what is true.\",\"unsupported\":\"item.basis is empty, says '(none)', or gives no reason that actually connects to item.claim.\"}},\"overclaim\":{\"type\":\"noul\",\"instructions\":\"Is item.claim worded with more certainty than item.basis can license? Rules: a strict derivation from a stated general rule and case may be stated as certain. A generalization from observed instances may be stated at most as probable, and less so the fewer the instances. A proposed explanation of an observation may be stated at most as plausible, never as the only possibility. A recommendation is fine if item.basis gives a reason for it. A claim with no connecting reason may not be stated as fact at all.\",\"criteria\":{\"true\":\"item.claim asserts as fact, certainty, 'always', or 'the only explanation' something that item.basis only makes probable, plausible, or does not support.\",\"false\":\"item.claim's wording is at or below the confidence that item.basis supports, or it is a recommendation that item.basis gives a reason for.\"}},\"scope_gap\":{\"type\":\"noul\",\"instructions\":\"Is item.claim about a broader or different subject than the thing item.basis actually measured or observed? Example: the basis measured one component, one tool, one channel, one machine, or one sample, while the claim speaks about a whole system, all users, or a different component. Compare the subject of item.claim with the subject of item.basis word by word.\",\"criteria\":{\"true\":\"The subject of item.claim is wider than, or different from, what item.basis measured or observed.\",\"false\":\"item.claim is about the same thing item.basis measured or observed.\"}},\"stakes\":{\"type\":\"score\",\"instructions\":\"If item.claim were false and someone went ahead with item.action (or relied on item.claim, if no action is given), how bad would the result be?\",\"criteria\":[\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"]}}},\"fingerprint\":\"ff1e8ee56f059ac3b0eaf21b5b723f38048f88bfa188203b4748c0fb2950771b\",\"cached\":false,\"response\":{\"model\":\"jev-1.13.0\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.31},\"certainty\":{\"type\":\"score\",\"score\":1.83,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0.18,\"2\":0.81,\"3\":0.01},\"confidence\":0.81},\"mode\":{\"type\":\"choice\",\"choice\":\"induction\",\"probabilities\":{\"recommendation\":0.03,\"unsupported\":0.03,\"abduction\":0,\"deduction\":0,\"induction\":0.94},\"confidence\":0.93},\"overclaim\":{\"type\":\"noul\",\"noul\":0.94},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.97},\"stakes\":{\"type\":\"score\",\"score\":1.17,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.08,\"1\":0.67,\"2\":0.25},\"confidence\":0.51}},\"usage\":{\"input_tokens\":1287,\"output_tokens\":146}},\"rawResponse\":{\"model\":\"jev-1.13.0\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.31},\"certainty\":{\"type\":\"score\",\"score\":1.83,\"confidence\":0.81,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0.18,\"2\":0.81,\"3\":0.01}},\"mode\":{\"type\":\"choice\",\"choice\":\"induction\",\"confidence\":0.93,\"probabilities\":{\"recommendation\":0.03,\"unsupported\":0.03,\"abduction\":0,\"deduction\":0,\"induction\":0.94}},\"overclaim\":{\"type\":\"noul\",\"noul\":0.94},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.97},\"stakes\":{\"type\":\"score\",\"score\":1.17,\"confidence\":0.51,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.08,\"1\":0.67,\"2\":0.25}}},\"usage\":{\"input_tokens\":1287,\"output_tokens\":146}},\"attempts\":1,\"elapsedMs\":598.3245059999999}]},{\"id\":\"deterministic_failure\",\"data\":{\"claim\":\"The submitted schedule violates its allowed-slot constraint and must not be recorded as a valid plan.\",\"basis\":\"The code validator computed B's slot from the actual submitted order and found it outside the allowed-slot list supplied in the task. This is a deterministic constraint violation, not an impression from the model's explanation.\",\"action\":\"Return the constraint failure to the generator and require validation of an actual replacement plan.\"},\"result\":{\"id\":\"deterministic_failure\",\"status\":\"complete\",\"stages\":{\"triage\":{\"status\":\"complete\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.03},\"certainty\":{\"type\":\"score\",\"score\":2.04,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0,\"2\":0.96,\"3\":0.04},\"confidence\":0.96},\"mode\":{\"type\":\"choice\",\"choice\":\"deduction\",\"probabilities\":{\"induction\":0,\"deduction\":0.93,\"unsupported\":0,\"abduction\":0.02,\"recommendation\":0.05},\"confidence\":0.91},\"overclaim\":{\"type\":\"noul\",\"noul\":0.15},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.2},\"stakes\":{\"type\":\"score\",\"score\":1.08,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.04,\"1\":0.84,\"2\":0.12},\"confidence\":0.77}},\"cached\":false}},\"selected\":true,\"rank\":0.253,\"composites\":{\"priority\":0.253,\"warrant_risk\":0.129},\"route\":\"prove\"},\"events\":[{\"stage\":\"triage\",\"request\":{\"model\":\"jev-latest\",\"state\":{\"item\":{\"claim\":\"The submitted schedule violates its allowed-slot constraint and must not be recorded as a valid plan.\",\"basis\":\"The code validator computed B's slot from the actual submitted order and found it outside the allowed-slot list supplied in the task. This is a deterministic constraint violation, not an impression from the model's explanation.\",\"action\":\"Return the constraint failure to the generator and require validation of an actual replacement plan.\"},\"context\":{},\"prior\":{}},\"questions\":{\"absence_as_evidence\":{\"type\":\"noul\",\"instructions\":\"Does item.basis support item.claim mainly by not having seen, noticed, or found something, without describing a search thorough enough that it would have found it if it existed?\",\"criteria\":{\"true\":\"item.basis rests on 'I have not seen / did not notice / am not aware of' something, with no systematic search described.\",\"false\":\"item.basis reports positive observations, or describes a search that would have found the thing if it existed.\"}},\"certainty\":{\"type\":\"score\",\"instructions\":\"How much certainty does the wording of item.claim itself express? Look only at item.claim's own words.\",\"criteria\":[\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"Probable: probably, likely, suggests, plausibly, most likely\",\"Stated as plain fact with no hedge\",\"Absolute: always, never, certainly, proves, impossible, nothing else could\"]},\"mode\":{\"type\":\"choice\",\"instructions\":\"How does item.claim relate to item.basis? Judge the logical relationship, not the topic or the confidence words.\",\"criteria\":{\"abduction\":\"item.basis reports an observation or symptom, and item.claim proposes a cause, explanation, or hidden state that would account for it.\",\"deduction\":\"item.basis states a general rule plus a specific case, and item.claim is exactly what that rule implies for that case. The claim would be necessarily true if the basis is true.\",\"induction\":\"item.basis reports observed instances, counts, tests, or measurements, and item.claim generalizes them into a pattern, rule, or prediction about cases not observed.\",\"recommendation\":\"item.claim says what should be done, decided, or how something should be read or treated, rather than stating what is true.\",\"unsupported\":\"item.basis is empty, says '(none)', or gives no reason that actually connects to item.claim.\"}},\"overclaim\":{\"type\":\"noul\",\"instructions\":\"Is item.claim worded with more certainty than item.basis can license? Rules: a strict derivation from a stated general rule and case may be stated as certain. A generalization from observed instances may be stated at most as probable, and less so the fewer the instances. A proposed explanation of an observation may be stated at most as plausible, never as the only possibility. A recommendation is fine if item.basis gives a reason for it. A claim with no connecting reason may not be stated as fact at all.\",\"criteria\":{\"true\":\"item.claim asserts as fact, certainty, 'always', or 'the only explanation' something that item.basis only makes probable, plausible, or does not support.\",\"false\":\"item.claim's wording is at or below the confidence that item.basis supports, or it is a recommendation that item.basis gives a reason for.\"}},\"scope_gap\":{\"type\":\"noul\",\"instructions\":\"Is item.claim about a broader or different subject than the thing item.basis actually measured or observed? Example: the basis measured one component, one tool, one channel, one machine, or one sample, while the claim speaks about a whole system, all users, or a different component. Compare the subject of item.claim with the subject of item.basis word by word.\",\"criteria\":{\"true\":\"The subject of item.claim is wider than, or different from, what item.basis measured or observed.\",\"false\":\"item.claim is about the same thing item.basis measured or observed.\"}},\"stakes\":{\"type\":\"score\",\"instructions\":\"If item.claim were false and someone went ahead with item.action (or relied on item.claim, if no action is given), how bad would the result be?\",\"criteria\":[\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"]}}},\"fingerprint\":\"1a219fd67df82805e777ad82028311250548cf50a7ce8a9b86ff11bedbeefde1\",\"cached\":false,\"response\":{\"model\":\"jev-1.13.0\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.03},\"certainty\":{\"type\":\"score\",\"score\":2.04,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0,\"2\":0.96,\"3\":0.04},\"confidence\":0.96},\"mode\":{\"type\":\"choice\",\"choice\":\"deduction\",\"probabilities\":{\"induction\":0,\"deduction\":0.93,\"unsupported\":0,\"abduction\":0.02,\"recommendation\":0.05},\"confidence\":0.91},\"overclaim\":{\"type\":\"noul\",\"noul\":0.15},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.2},\"stakes\":{\"type\":\"score\",\"score\":1.08,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.04,\"1\":0.84,\"2\":0.12},\"confidence\":0.77}},\"usage\":{\"input_tokens\":1305,\"output_tokens\":146}},\"rawResponse\":{\"model\":\"jev-1.13.0\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.03},\"certainty\":{\"type\":\"score\",\"score\":2.04,\"confidence\":0.96,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0,\"2\":0.96,\"3\":0.04}},\"mode\":{\"type\":\"choice\",\"choice\":\"deduction\",\"confidence\":0.91,\"probabilities\":{\"induction\":0,\"deduction\":0.93,\"unsupported\":0,\"abduction\":0.02,\"recommendation\":0.05}},\"overclaim\":{\"type\":\"noul\",\"noul\":0.15},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.2},\"stakes\":{\"type\":\"score\",\"score\":1.08,\"confidence\":0.77,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.04,\"1\":0.84,\"2\":0.12}}},\"usage\":{\"input_tokens\":1305,\"output_tokens\":146}},\"attempts\":1,\"elapsedMs\":634.862284}]}],\"nextCursor\":null,\"outcomes\":[]}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "runId": "84a4262f-c685-4b7c-a1ac-695b24a64411",
+      "status": "complete",
+      "manifest": {
+        "createdAt": "2026-10-04T03:03:33.286Z",
+        "capability": {
+          "name": "claim_router",
+          "version": 1,
+          "hash": "0eb1ec6a11514506c346c6e77bcabb2efc0813f1dd7a34c6813facf0a8108788",
+          "definition": {
+            "name": "claim_router",
+            "description": "Route a claim to the check that suits how it was reasoned (Peirce: deduction, induction, abduction), using all four TypeSafe patterns: one fan-out stage asks every question at once; composites weight the warning signs; confidence gates send unclear cases to a second opinion; routes name the next check for the host to run. item = {claim, basis, action?} where action is what will be done if the claim is believed. The server only labels; the host runs the check. Judges wording and stated basis, not truth.",
+            "stages": [
+              {
+                "id": "triage",
+                "questions": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "instructions": "Does item.basis support item.claim mainly by not having seen, noticed, or found something, without describing a search thorough enough that it would have found it if it existed?",
+                    "criteria": {
+                      "true": "item.basis rests on 'I have not seen / did not notice / am not aware of' something, with no systematic search described.",
+                      "false": "item.basis reports positive observations, or describes a search that would have found the thing if it existed."
+                    }
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "instructions": "How much certainty does the wording of item.claim itself express? Look only at item.claim's own words.",
+                    "criteria": [
+                      "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "Probable: probably, likely, suggests, plausibly, most likely",
+                      "Stated as plain fact with no hedge",
+                      "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    ]
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "instructions": "How does item.claim relate to item.basis? Judge the logical relationship, not the topic or the confidence words.",
+                    "criteria": {
+                      "abduction": "item.basis reports an observation or symptom, and item.claim proposes a cause, explanation, or hidden state that would account for it.",
+                      "deduction": "item.basis states a general rule plus a specific case, and item.claim is exactly what that rule implies for that case. The claim would be necessarily true if the basis is true.",
+                      "induction": "item.basis reports observed instances, counts, tests, or measurements, and item.claim generalizes them into a pattern, rule, or prediction about cases not observed.",
+                      "recommendation": "item.claim says what should be done, decided, or how something should be read or treated, rather than stating what is true.",
+                      "unsupported": "item.basis is empty, says '(none)', or gives no reason that actually connects to item.claim."
+                    }
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "instructions": "Is item.claim worded with more certainty than item.basis can license? Rules: a strict derivation from a stated general rule and case may be stated as certain. A generalization from observed instances may be stated at most as probable, and less so the fewer the instances. A proposed explanation of an observation may be stated at most as plausible, never as the only possibility. A recommendation is fine if item.basis gives a reason for it. A claim with no connecting reason may not be stated as fact at all.",
+                    "criteria": {
+                      "true": "item.claim asserts as fact, certainty, 'always', or 'the only explanation' something that item.basis only makes probable, plausible, or does not support.",
+                      "false": "item.claim's wording is at or below the confidence that item.basis supports, or it is a recommendation that item.basis gives a reason for."
+                    }
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "instructions": "Is item.claim about a broader or different subject than the thing item.basis actually measured or observed? Example: the basis measured one component, one tool, one channel, one machine, or one sample, while the claim speaks about a whole system, all users, or a different component. Compare the subject of item.claim with the subject of item.basis word by word.",
+                    "criteria": {
+                      "true": "The subject of item.claim is wider than, or different from, what item.basis measured or observed.",
+                      "false": "item.claim is about the same thing item.basis measured or observed."
+                    }
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "instructions": "If item.claim were false and someone went ahead with item.action (or relied on item.claim, if no action is given), how bad would the result be?",
+                    "criteria": [
+                      "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    ]
+                  }
+                }
+              }
+            ],
+            "composites": {
+              "priority": {
+                "description": "What to check first: warning signs plus stakes.",
+                "terms": [
+                  {
+                    "stage": "triage",
+                    "question": "overclaim",
+                    "weight": 0.3
+                  },
+                  {
+                    "stage": "triage",
+                    "question": "scope_gap",
+                    "weight": 0.2
+                  },
+                  {
+                    "stage": "triage",
+                    "question": "absence_as_evidence",
+                    "weight": 0.2
+                  },
+                  {
+                    "stage": "triage",
+                    "question": "stakes",
+                    "weight": 0.3
+                  }
+                ]
+              },
+              "warrant_risk": {
+                "description": "How far the wording outruns the stated basis, weighted toward the clearest signals.",
+                "terms": [
+                  {
+                    "stage": "triage",
+                    "question": "overclaim",
+                    "weight": 0.4
+                  },
+                  {
+                    "stage": "triage",
+                    "question": "scope_gap",
+                    "weight": 0.3
+                  },
+                  {
+                    "stage": "triage",
+                    "question": "absence_as_evidence",
+                    "weight": 0.3
+                  }
+                ]
+              }
+            },
+            "routes": [
+              {
+                "id": "ask_for_basis",
+                "when": [
+                  {
+                    "stage": "triage",
+                    "question": "mode",
+                    "op": "eq",
+                    "value": "unsupported"
+                  }
+                ],
+                "description": "No reason given. Ask for or find the basis before anything else."
+              },
+              {
+                "id": "search_first",
+                "when": [
+                  {
+                    "stage": "triage",
+                    "question": "absence_as_evidence",
+                    "op": "gte",
+                    "value": 0.6
+                  }
+                ],
+                "description": "Rests on not having seen something. Run a search that would find it (docs, web, repo) before asserting."
+              },
+              {
+                "id": "second_opinion",
+                "when": [
+                  {
+                    "stage": "triage",
+                    "question": "mode",
+                    "op": "lte",
+                    "value": 0.45,
+                    "field": "confidence"
+                  }
+                ],
+                "description": "Jev cannot tell what kind of reasoning this is. Have another judge or a person classify it."
+              },
+              {
+                "id": "accept",
+                "when": [
+                  {
+                    "composite": "warrant_risk",
+                    "op": "lte",
+                    "value": 0.35
+                  },
+                  {
+                    "stage": "triage",
+                    "question": "stakes",
+                    "op": "lte",
+                    "value": 0.8
+                  }
+                ],
+                "description": "Wording fits the basis and little is at stake. No further check."
+              },
+              {
+                "id": "prove",
+                "when": [
+                  {
+                    "stage": "triage",
+                    "question": "mode",
+                    "op": "eq",
+                    "value": "deduction"
+                  }
+                ],
+                "description": "Deduction: check the derivation with a prover (mcp-logic prove, efh-core verify_implication) or by re-deriving it."
+              },
+              {
+                "id": "check_sample",
+                "when": [
+                  {
+                    "stage": "triage",
+                    "question": "mode",
+                    "op": "eq",
+                    "value": "induction"
+                  }
+                ],
+                "description": "Induction: check sample size, representativeness, and whether the claim is hedged to match."
+              },
+              {
+                "id": "test_rivals",
+                "when": [
+                  {
+                    "stage": "triage",
+                    "question": "mode",
+                    "op": "eq",
+                    "value": "abduction"
+                  }
+                ],
+                "description": "Abduction: list rival explanations, then run evidence_stance with them as items and the observations in context."
+              },
+              {
+                "id": "check_reasons",
+                "when": [
+                  {
+                    "stage": "triage",
+                    "question": "mode",
+                    "op": "eq",
+                    "value": "recommendation"
+                  }
+                ],
+                "description": "Recommendation: check that the stated reasons actually support the action and its stakes."
+              },
+              {
+                "id": "manual_review",
+                "description": "Nothing else matched."
+              }
+            ],
+            "rank": {
+              "composite": "priority",
+              "direction": "desc"
+            },
+            "notes": "v1, 2026-09-22. Built from inference_warrant v3 questions (verbatim) plus a stakes score. Findings carried over: overclaim fires on most flat statements, so it is weighted and not a route by itself; absence_as_evidence was the cleanest signal, so it routes directly; rivals cannot be judged without supplied candidates, so abduction routes to test_rivals (host lists rivals, evidence_stance judges them). Thresholds (0.6, 0.45, 0.35, 0.8) are authored guesses to be evaluated."
+          },
+          "createdAt": "2026-09-23T02:57:45.397Z",
+          "validation": "unvalidated"
+        },
+        "context": {},
+        "provider": "typesafe",
+        "model": "jev-latest",
+        "plannedCalls": 3,
+        "options": {
+          "maxCalls": 3,
+          "useCache": false
+        }
+      },
+      "summary": {
+        "modelCalls": 3,
+        "httpAttempts": 3,
+        "cacheHits": 0,
+        "reportedCostUsd": 0,
+        "unreportedCosts": 3,
+        "inputTokens": 3926,
+        "outputTokens": 439,
+        "totalItems": 3,
+        "completedItems": 3,
+        "selectedIds": [
+          "overgeneralization_control",
+          "scoped_settings_result",
+          "deterministic_failure"
+        ],
+        "routes": {
+          "prove": [
+            "deterministic_failure"
+          ],
+          "check_sample": [
+            "overgeneralization_control"
+          ],
+          "second_opinion": [
+            "scoped_settings_result"
+          ]
+        }
+      },
+      "items": [
+        {
+          "id": "scoped_settings_result",
+          "data": {
+            "claim": "This local development check motivates testing thinking-enabled settings before another framing study. It does not establish a benefit of self-model framing.",
+            "basis": "The recorded P0-only experiment held context fixed, crossed thinking mode and generation cap, and used three previously studied development cases. Thinking with the larger cap repaired the premise and maintenance plans, while the simulator plan remained wrong. The experiment did not compare P1 with P2 and used only one installed model.",
+            "action": "Validate thinking-enabled settings across development families, then freeze a separate matched framing comparison."
+          },
+          "result": {
+            "id": "scoped_settings_result",
+            "status": "complete",
+            "stages": {
+              "triage": {
+                "status": "complete",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.25
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 2.02,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0.01,
+                      "2": 0.95,
+                      "3": 0.04
+                    },
+                    "confidence": 0.95
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "recommendation",
+                    "probabilities": {
+                      "recommendation": 0.41,
+                      "unsupported": 0.01,
+                      "abduction": 0.04,
+                      "deduction": 0.3,
+                      "induction": 0.24
+                    },
+                    "confidence": 0.26
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.32
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.43
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 0.99,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.08,
+                      "1": 0.85,
+                      "2": 0.07
+                    },
+                    "confidence": 0.78
+                  }
+                },
+                "cached": false
+              }
+            },
+            "selected": true,
+            "rank": 0.38049999999999995,
+            "composites": {
+              "priority": 0.38049999999999995,
+              "warrant_risk": 0.332
+            },
+            "route": "second_opinion"
+          },
+          "events": [
+            {
+              "stage": "triage",
+              "request": {
+                "model": "jev-latest",
+                "state": {
+                  "item": {
+                    "claim": "This local development check motivates testing thinking-enabled settings before another framing study. It does not establish a benefit of self-model framing.",
+                    "basis": "The recorded P0-only experiment held context fixed, crossed thinking mode and generation cap, and used three previously studied development cases. Thinking with the larger cap repaired the premise and maintenance plans, while the simulator plan remained wrong. The experiment did not compare P1 with P2 and used only one installed model.",
+                    "action": "Validate thinking-enabled settings across development families, then freeze a separate matched framing comparison."
+                  },
+                  "context": {},
+                  "prior": {}
+                },
+                "questions": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "instructions": "Does item.basis support item.claim mainly by not having seen, noticed, or found something, without describing a search thorough enough that it would have found it if it existed?",
+                    "criteria": {
+                      "true": "item.basis rests on 'I have not seen / did not notice / am not aware of' something, with no systematic search described.",
+                      "false": "item.basis reports positive observations, or describes a search that would have found the thing if it existed."
+                    }
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "instructions": "How much certainty does the wording of item.claim itself express? Look only at item.claim's own words.",
+                    "criteria": [
+                      "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "Probable: probably, likely, suggests, plausibly, most likely",
+                      "Stated as plain fact with no hedge",
+                      "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    ]
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "instructions": "How does item.claim relate to item.basis? Judge the logical relationship, not the topic or the confidence words.",
+                    "criteria": {
+                      "abduction": "item.basis reports an observation or symptom, and item.claim proposes a cause, explanation, or hidden state that would account for it.",
+                      "deduction": "item.basis states a general rule plus a specific case, and item.claim is exactly what that rule implies for that case. The claim would be necessarily true if the basis is true.",
+                      "induction": "item.basis reports observed instances, counts, tests, or measurements, and item.claim generalizes them into a pattern, rule, or prediction about cases not observed.",
+                      "recommendation": "item.claim says what should be done, decided, or how something should be read or treated, rather than stating what is true.",
+                      "unsupported": "item.basis is empty, says '(none)', or gives no reason that actually connects to item.claim."
+                    }
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "instructions": "Is item.claim worded with more certainty than item.basis can license? Rules: a strict derivation from a stated general rule and case may be stated as certain. A generalization from observed instances may be stated at most as probable, and less so the fewer the instances. A proposed explanation of an observation may be stated at most as plausible, never as the only possibility. A recommendation is fine if item.basis gives a reason for it. A claim with no connecting reason may not be stated as fact at all.",
+                    "criteria": {
+                      "true": "item.claim asserts as fact, certainty, 'always', or 'the only explanation' something that item.basis only makes probable, plausible, or does not support.",
+                      "false": "item.claim's wording is at or below the confidence that item.basis supports, or it is a recommendation that item.basis gives a reason for."
+                    }
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "instructions": "Is item.claim about a broader or different subject than the thing item.basis actually measured or observed? Example: the basis measured one component, one tool, one channel, one machine, or one sample, while the claim speaks about a whole system, all users, or a different component. Compare the subject of item.claim with the subject of item.basis word by word.",
+                    "criteria": {
+                      "true": "The subject of item.claim is wider than, or different from, what item.basis measured or observed.",
+                      "false": "item.claim is about the same thing item.basis measured or observed."
+                    }
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "instructions": "If item.claim were false and someone went ahead with item.action (or relied on item.claim, if no action is given), how bad would the result be?",
+                    "criteria": [
+                      "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    ]
+                  }
+                }
+              },
+              "fingerprint": "7d85712f09a631e771d51fd822d623ab8ccb8445bc608f71aca7ccb842ef28e0",
+              "cached": false,
+              "response": {
+                "model": "jev-1.13.0",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.25
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 2.02,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0.01,
+                      "2": 0.95,
+                      "3": 0.04
+                    },
+                    "confidence": 0.95
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "recommendation",
+                    "probabilities": {
+                      "recommendation": 0.41,
+                      "unsupported": 0.01,
+                      "abduction": 0.04,
+                      "deduction": 0.3,
+                      "induction": 0.24
+                    },
+                    "confidence": 0.26
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.32
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.43
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 0.99,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.08,
+                      "1": 0.85,
+                      "2": 0.07
+                    },
+                    "confidence": 0.78
+                  }
+                },
+                "usage": {
+                  "input_tokens": 1334,
+                  "output_tokens": 147
+                }
+              },
+              "rawResponse": {
+                "model": "jev-1.13.0",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.25
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 2.02,
+                    "confidence": 0.95,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0.01,
+                      "2": 0.95,
+                      "3": 0.04
+                    }
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "recommendation",
+                    "confidence": 0.26,
+                    "probabilities": {
+                      "recommendation": 0.41,
+                      "unsupported": 0.01,
+                      "abduction": 0.04,
+                      "deduction": 0.3,
+                      "induction": 0.24
+                    }
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.32
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.43
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 0.99,
+                    "confidence": 0.78,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.08,
+                      "1": 0.85,
+                      "2": 0.07
+                    }
+                  }
+                },
+                "usage": {
+                  "input_tokens": 1334,
+                  "output_tokens": 147
+                }
+              },
+              "attempts": 1,
+              "elapsedMs": 571.471765
+            }
+          ]
+        },
+        {
+          "id": "overgeneralization_control",
+          "data": {
+            "claim": "Self-model framing generally makes advanced models worse at reasoning.",
+            "basis": "One non-thinking local derivative performed worse under P2 than P1 on a small author-designed structured bank. There was no independent review, independent model replication or thinking-enabled framing comparison.",
+            "action": "Reject self-model framing for advanced models in general."
+          },
+          "result": {
+            "id": "overgeneralization_control",
+            "status": "complete",
+            "stages": {
+              "triage": {
+                "status": "complete",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.31
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 1.83,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0.18,
+                      "2": 0.81,
+                      "3": 0.01
+                    },
+                    "confidence": 0.81
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "induction",
+                    "probabilities": {
+                      "recommendation": 0.03,
+                      "unsupported": 0.03,
+                      "abduction": 0,
+                      "deduction": 0,
+                      "induction": 0.94
+                    },
+                    "confidence": 0.93
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.94
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.97
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 1.17,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.08,
+                      "1": 0.67,
+                      "2": 0.25
+                    },
+                    "confidence": 0.51
+                  }
+                },
+                "cached": false
+              }
+            },
+            "selected": true,
+            "rank": 0.7135,
+            "composites": {
+              "priority": 0.7135,
+              "warrant_risk": 0.76
+            },
+            "route": "check_sample"
+          },
+          "events": [
+            {
+              "stage": "triage",
+              "request": {
+                "model": "jev-latest",
+                "state": {
+                  "item": {
+                    "claim": "Self-model framing generally makes advanced models worse at reasoning.",
+                    "basis": "One non-thinking local derivative performed worse under P2 than P1 on a small author-designed structured bank. There was no independent review, independent model replication or thinking-enabled framing comparison.",
+                    "action": "Reject self-model framing for advanced models in general."
+                  },
+                  "context": {},
+                  "prior": {}
+                },
+                "questions": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "instructions": "Does item.basis support item.claim mainly by not having seen, noticed, or found something, without describing a search thorough enough that it would have found it if it existed?",
+                    "criteria": {
+                      "true": "item.basis rests on 'I have not seen / did not notice / am not aware of' something, with no systematic search described.",
+                      "false": "item.basis reports positive observations, or describes a search that would have found the thing if it existed."
+                    }
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "instructions": "How much certainty does the wording of item.claim itself express? Look only at item.claim's own words.",
+                    "criteria": [
+                      "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "Probable: probably, likely, suggests, plausibly, most likely",
+                      "Stated as plain fact with no hedge",
+                      "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    ]
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "instructions": "How does item.claim relate to item.basis? Judge the logical relationship, not the topic or the confidence words.",
+                    "criteria": {
+                      "abduction": "item.basis reports an observation or symptom, and item.claim proposes a cause, explanation, or hidden state that would account for it.",
+                      "deduction": "item.basis states a general rule plus a specific case, and item.claim is exactly what that rule implies for that case. The claim would be necessarily true if the basis is true.",
+                      "induction": "item.basis reports observed instances, counts, tests, or measurements, and item.claim generalizes them into a pattern, rule, or prediction about cases not observed.",
+                      "recommendation": "item.claim says what should be done, decided, or how something should be read or treated, rather than stating what is true.",
+                      "unsupported": "item.basis is empty, says '(none)', or gives no reason that actually connects to item.claim."
+                    }
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "instructions": "Is item.claim worded with more certainty than item.basis can license? Rules: a strict derivation from a stated general rule and case may be stated as certain. A generalization from observed instances may be stated at most as probable, and less so the fewer the instances. A proposed explanation of an observation may be stated at most as plausible, never as the only possibility. A recommendation is fine if item.basis gives a reason for it. A claim with no connecting reason may not be stated as fact at all.",
+                    "criteria": {
+                      "true": "item.claim asserts as fact, certainty, 'always', or 'the only explanation' something that item.basis only makes probable, plausible, or does not support.",
+                      "false": "item.claim's wording is at or below the confidence that item.basis supports, or it is a recommendation that item.basis gives a reason for."
+                    }
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "instructions": "Is item.claim about a broader or different subject than the thing item.basis actually measured or observed? Example: the basis measured one component, one tool, one channel, one machine, or one sample, while the claim speaks about a whole system, all users, or a different component. Compare the subject of item.claim with the subject of item.basis word by word.",
+                    "criteria": {
+                      "true": "The subject of item.claim is wider than, or different from, what item.basis measured or observed.",
+                      "false": "item.claim is about the same thing item.basis measured or observed."
+                    }
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "instructions": "If item.claim were false and someone went ahead with item.action (or relied on item.claim, if no action is given), how bad would the result be?",
+                    "criteria": [
+                      "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    ]
+                  }
+                }
+              },
+              "fingerprint": "ff1e8ee56f059ac3b0eaf21b5b723f38048f88bfa188203b4748c0fb2950771b",
+              "cached": false,
+              "response": {
+                "model": "jev-1.13.0",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.31
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 1.83,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0.18,
+                      "2": 0.81,
+                      "3": 0.01
+                    },
+                    "confidence": 0.81
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "induction",
+                    "probabilities": {
+                      "recommendation": 0.03,
+                      "unsupported": 0.03,
+                      "abduction": 0,
+                      "deduction": 0,
+                      "induction": 0.94
+                    },
+                    "confidence": 0.93
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.94
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.97
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 1.17,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.08,
+                      "1": 0.67,
+                      "2": 0.25
+                    },
+                    "confidence": 0.51
+                  }
+                },
+                "usage": {
+                  "input_tokens": 1287,
+                  "output_tokens": 146
+                }
+              },
+              "rawResponse": {
+                "model": "jev-1.13.0",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.31
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 1.83,
+                    "confidence": 0.81,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0.18,
+                      "2": 0.81,
+                      "3": 0.01
+                    }
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "induction",
+                    "confidence": 0.93,
+                    "probabilities": {
+                      "recommendation": 0.03,
+                      "unsupported": 0.03,
+                      "abduction": 0,
+                      "deduction": 0,
+                      "induction": 0.94
+                    }
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.94
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.97
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 1.17,
+                    "confidence": 0.51,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.08,
+                      "1": 0.67,
+                      "2": 0.25
+                    }
+                  }
+                },
+                "usage": {
+                  "input_tokens": 1287,
+                  "output_tokens": 146
+                }
+              },
+              "attempts": 1,
+              "elapsedMs": 598.3245059999999
+            }
+          ]
+        },
+        {
+          "id": "deterministic_failure",
+          "data": {
+            "claim": "The submitted schedule violates its allowed-slot constraint and must not be recorded as a valid plan.",
+            "basis": "The code validator computed B's slot from the actual submitted order and found it outside the allowed-slot list supplied in the task. This is a deterministic constraint violation, not an impression from the model's explanation.",
+            "action": "Return the constraint failure to the generator and require validation of an actual replacement plan."
+          },
+          "result": {
+            "id": "deterministic_failure",
+            "status": "complete",
+            "stages": {
+              "triage": {
+                "status": "complete",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.03
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 2.04,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0,
+                      "2": 0.96,
+                      "3": 0.04
+                    },
+                    "confidence": 0.96
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "deduction",
+                    "probabilities": {
+                      "induction": 0,
+                      "deduction": 0.93,
+                      "unsupported": 0,
+                      "abduction": 0.02,
+                      "recommendation": 0.05
+                    },
+                    "confidence": 0.91
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.15
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.2
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 1.08,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.04,
+                      "1": 0.84,
+                      "2": 0.12
+                    },
+                    "confidence": 0.77
+                  }
+                },
+                "cached": false
+              }
+            },
+            "selected": true,
+            "rank": 0.253,
+            "composites": {
+              "priority": 0.253,
+              "warrant_risk": 0.129
+            },
+            "route": "prove"
+          },
+          "events": [
+            {
+              "stage": "triage",
+              "request": {
+                "model": "jev-latest",
+                "state": {
+                  "item": {
+                    "claim": "The submitted schedule violates its allowed-slot constraint and must not be recorded as a valid plan.",
+                    "basis": "The code validator computed B's slot from the actual submitted order and found it outside the allowed-slot list supplied in the task. This is a deterministic constraint violation, not an impression from the model's explanation.",
+                    "action": "Return the constraint failure to the generator and require validation of an actual replacement plan."
+                  },
+                  "context": {},
+                  "prior": {}
+                },
+                "questions": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "instructions": "Does item.basis support item.claim mainly by not having seen, noticed, or found something, without describing a search thorough enough that it would have found it if it existed?",
+                    "criteria": {
+                      "true": "item.basis rests on 'I have not seen / did not notice / am not aware of' something, with no systematic search described.",
+                      "false": "item.basis reports positive observations, or describes a search that would have found the thing if it existed."
+                    }
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "instructions": "How much certainty does the wording of item.claim itself express? Look only at item.claim's own words.",
+                    "criteria": [
+                      "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "Probable: probably, likely, suggests, plausibly, most likely",
+                      "Stated as plain fact with no hedge",
+                      "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    ]
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "instructions": "How does item.claim relate to item.basis? Judge the logical relationship, not the topic or the confidence words.",
+                    "criteria": {
+                      "abduction": "item.basis reports an observation or symptom, and item.claim proposes a cause, explanation, or hidden state that would account for it.",
+                      "deduction": "item.basis states a general rule plus a specific case, and item.claim is exactly what that rule implies for that case. The claim would be necessarily true if the basis is true.",
+                      "induction": "item.basis reports observed instances, counts, tests, or measurements, and item.claim generalizes them into a pattern, rule, or prediction about cases not observed.",
+                      "recommendation": "item.claim says what should be done, decided, or how something should be read or treated, rather than stating what is true.",
+                      "unsupported": "item.basis is empty, says '(none)', or gives no reason that actually connects to item.claim."
+                    }
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "instructions": "Is item.claim worded with more certainty than item.basis can license? Rules: a strict derivation from a stated general rule and case may be stated as certain. A generalization from observed instances may be stated at most as probable, and less so the fewer the instances. A proposed explanation of an observation may be stated at most as plausible, never as the only possibility. A recommendation is fine if item.basis gives a reason for it. A claim with no connecting reason may not be stated as fact at all.",
+                    "criteria": {
+                      "true": "item.claim asserts as fact, certainty, 'always', or 'the only explanation' something that item.basis only makes probable, plausible, or does not support.",
+                      "false": "item.claim's wording is at or below the confidence that item.basis supports, or it is a recommendation that item.basis gives a reason for."
+                    }
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "instructions": "Is item.claim about a broader or different subject than the thing item.basis actually measured or observed? Example: the basis measured one component, one tool, one channel, one machine, or one sample, while the claim speaks about a whole system, all users, or a different component. Compare the subject of item.claim with the subject of item.basis word by word.",
+                    "criteria": {
+                      "true": "The subject of item.claim is wider than, or different from, what item.basis measured or observed.",
+                      "false": "item.claim is about the same thing item.basis measured or observed."
+                    }
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "instructions": "If item.claim were false and someone went ahead with item.action (or relied on item.claim, if no action is given), how bad would the result be?",
+                    "criteria": [
+                      "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    ]
+                  }
+                }
+              },
+              "fingerprint": "1a219fd67df82805e777ad82028311250548cf50a7ce8a9b86ff11bedbeefde1",
+              "cached": false,
+              "response": {
+                "model": "jev-1.13.0",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.03
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 2.04,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0,
+                      "2": 0.96,
+                      "3": 0.04
+                    },
+                    "confidence": 0.96
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "deduction",
+                    "probabilities": {
+                      "induction": 0,
+                      "deduction": 0.93,
+                      "unsupported": 0,
+                      "abduction": 0.02,
+                      "recommendation": 0.05
+                    },
+                    "confidence": 0.91
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.15
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.2
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 1.08,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.04,
+                      "1": 0.84,
+                      "2": 0.12
+                    },
+                    "confidence": 0.77
+                  }
+                },
+                "usage": {
+                  "input_tokens": 1305,
+                  "output_tokens": 146
+                }
+              },
+              "rawResponse": {
+                "model": "jev-1.13.0",
+                "answers": {
+                  "absence_as_evidence": {
+                    "type": "noul",
+                    "noul": 0.03
+                  },
+                  "certainty": {
+                    "type": "score",
+                    "score": 2.04,
+                    "confidence": 0.96,
+                    "legend": {
+                      "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                      "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                      "2": "Stated as plain fact with no hedge",
+                      "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                    },
+                    "probabilities": {
+                      "0": 0,
+                      "1": 0,
+                      "2": 0.96,
+                      "3": 0.04
+                    }
+                  },
+                  "mode": {
+                    "type": "choice",
+                    "choice": "deduction",
+                    "confidence": 0.91,
+                    "probabilities": {
+                      "induction": 0,
+                      "deduction": 0.93,
+                      "unsupported": 0,
+                      "abduction": 0.02,
+                      "recommendation": 0.05
+                    }
+                  },
+                  "overclaim": {
+                    "type": "noul",
+                    "noul": 0.15
+                  },
+                  "scope_gap": {
+                    "type": "noul",
+                    "noul": 0.2
+                  },
+                  "stakes": {
+                    "type": "score",
+                    "score": 1.08,
+                    "confidence": 0.77,
+                    "legend": {
+                      "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                      "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                      "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                    },
+                    "probabilities": {
+                      "0": 0.04,
+                      "1": 0.84,
+                      "2": 0.12
+                    }
+                  }
+                },
+                "usage": {
+                  "input_tokens": 1305,
+                  "output_tokens": 146
+                }
+              },
+              "attempts": 1,
+              "elapsedMs": 634.862284
+            }
+          ]
+        }
+      ],
+      "nextCursor": null,
+      "outcomes": []
+    }
+  }
+}

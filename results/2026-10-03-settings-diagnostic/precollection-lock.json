@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-10-04T02:40:23.154888+00:00",
+  "source_hashes": {
+    "scripts/run_settings_diagnostic.py": "3e12c6aa54e0588b62e9bf80d7b9e283a8ce6f8b418d0ca5fd9aed8dcc64b241",
+    "scripts/run_ollama.py": "2f6b61d01b77f140670a31992266e7332e3d16f2fa7c4cd5a696c5e9af85634b",
+    "scripts/grade_challenge.py": "fa5b57cecf044e1b5e994272224748a00a60ca94266b3922844f600df3fd0872",
+    "scripts/analyze_challenge_test.py": "33c3f5377b2bed5729b72363d6e83a60fe1b66d820b4b5ebc85f86e280804f00",
+    "data/challenge-dev-v1.json": "583810d2730053264ebfd0f2f7b3ebbf322dd13ae3382b1f3d3923706667a407",
+    "docs/settings-diagnostic-protocol.md": "543265c48fa1af5fd0de33609c00db35545797cce012de6be32778491944e06f"
+  },
+  "dataset_sha256": "ea07721911846a188dd02747977f405845398504c2709249188e90ee3fe0ee15",
+  "arms": [
+    {
+      "id": "think-false-cap-8192",
+      "think": false,
+      "cap": 8192
+    },
+    {
+      "id": "think-true-cap-8192",
+      "think": true,
+      "cap": 8192
+    },
+    {
+      "id": "think-false-cap-1024",
+      "think": false,
+      "cap": 1024
+    },
+    {
+      "id": "think-true-cap-1024",
+      "think": true,
+      "cap": 1024
+    }
+  ],
+  "case_ids": [
+    "C-F1",
+    "C-G1",
+    "C-S1"
+  ],
+  "num_ctx": 16384,
+  "case_order_seed": 20261010,
+  "total_attempt_limit": 12,
+  "request_timeout_seconds": 900,
+  "wall_budget_seconds": 7200,
+  "selection": "First development instance in premise, means and stakes; weak families selected after prior results. Not an efficacy sample."
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "label": "answer-001",
+    "cell": "D5-P2",
+    "case_id": "D5",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-002",
+    "cell": "D1-P0",
+    "case_id": "D1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-003",
+    "cell": "D4-P0",
+    "case_id": "D4",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-004",
+    "cell": "D6-P2",
+    "case_id": "D6",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-005",
+    "cell": "D3-P1",
+    "case_id": "D3",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-006",
+    "cell": "D1-P2",
+    "case_id": "D1",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-007",
+    "cell": "D2-P1",
+    "case_id": "D2",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-008",
+    "cell": "D4-P1",
+    "case_id": "D4",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-009",
+    "cell": "D4-P2",
+    "case_id": "D4",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-010",
+    "cell": "D2-P2",
+    "case_id": "D2",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-011",
+    "cell": "D3-P2",
+    "case_id": "D3",
+    "condition": "P2"
+  },
+  {
+    "label": "answer-012",
+    "cell": "D5-P0",
+    "case_id": "D5",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-013",
+    "cell": "D3-P0",
+    "case_id": "D3",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-014",
+    "cell": "D2-P0",
+    "case_id": "D2",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-015",
+    "cell": "D6-P1",
+    "case_id": "D6",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-016",
+    "cell": "D1-P1",
+    "case_id": "D1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-017",
+    "cell": "D5-P1",
+    "case_id": "D5",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-018",
+    "cell": "D6-P0",
+    "case_id": "D6",
+    "condition": "P0"
+  }
+]

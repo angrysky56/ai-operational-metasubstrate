@@ -1,0 +1,14 @@
+{
+  "frozen_at": "2026-10-04T00:24:43.659274+00:00",
+  "status": "frozen_before_collection",
+  "independent_case_review": false,
+  "scoring": "single_AI_reviewer_condition_masked",
+  "primary": "P2-P1 case success",
+  "source_hashes": {
+    "data/pilot-v1.json": "27243d22906ed6b4ba27586164f4012e5d38c9c07ade87b458af73e76d4a6210",
+    "docs/pilot-v1-protocol.md": "23189229600f8a5d4d7d5dcd70573f99c6158ff16ef3de4644b719a9b50f954a",
+    "scripts/build_pilot.py": "27d43f824096ed0629516247b37ee88cdda701750f42bacc088a6da8c4f66307",
+    "scripts/run_ollama.py": "2f6b61d01b77f140670a31992266e7332e3d16f2fa7c4cd5a696c5e9af85634b",
+    "scripts/analyze_pilot.py": "c3f7f070a0a7be64fd19c295170095fe8a4b0bd332ff1a840e8898bca881c46f"
+  }
+}

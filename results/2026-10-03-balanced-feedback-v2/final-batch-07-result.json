@@ -1,0 +1,167 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"runId\":\"b677caa4-9985-403a-99b1-bc39bd03c007\",\"status\":\"complete\",\"capability\":{\"name\":\"omkt_payload_consistency\",\"version\":1,\"hash\":\"3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544\"},\"summary\":{\"modelCalls\":12,\"httpAttempts\":12,\"cacheHits\":0,\"reportedCostUsd\":0,\"unreportedCosts\":12,\"inputTokens\":8582,\"outputTokens\":552,\"totalItems\":12,\"completedItems\":12,\"selectedIds\":[\"H_F4_P1_final_0\",\"H_F4_P1_final_1\",\"H_F4_P2_final_0\",\"H_F4_P2_final_1\",\"H_T4_P1_final_0\",\"H_T4_P1_final_1\",\"H_T4_P2_final_0\",\"H_T4_P2_final_1\",\"H_U4_P1_final_0\",\"H_U4_P1_final_1\",\"H_U4_P2_final_0\",\"H_U4_P2_final_1\"]},\"results\":[{\"id\":\"H_F4_P1_final_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"contradicts_payload\":0.09,\"supports_payload\":0.86,\"does_not_resolve\":0.05},\"confidence\":0.78}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_F4_P1_final_1\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":0.9,\"contradicts_payload\":0.08,\"does_not_resolve\":0.02},\"confidence\":0.86}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_F4_P2_final_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"does_not_resolve\":0.11,\"supports_payload\":0.6799999999999999,\"contradicts_payload\":0.21},\"confidence\":0.53}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_F4_P2_final_1\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":0.97,\"contradicts_payload\":0.03,\"does_not_resolve\":0},\"confidence\":0.95}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_T4_P1_final_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"does_not_resolve\":0,\"supports_payload\":1,\"contradicts_payload\":0},\"confidence\":1}},\"cached\":false}},\"selected\":true,\"rank\":null}],\"moreResults\":true}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "runId": "b677caa4-9985-403a-99b1-bc39bd03c007",
+      "status": "complete",
+      "capability": {
+        "name": "omkt_payload_consistency",
+        "version": 1,
+        "hash": "3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544"
+      },
+      "summary": {
+        "modelCalls": 12,
+        "httpAttempts": 12,
+        "cacheHits": 0,
+        "reportedCostUsd": 0,
+        "unreportedCosts": 12,
+        "inputTokens": 8582,
+        "outputTokens": 552,
+        "totalItems": 12,
+        "completedItems": 12,
+        "selectedIds": [
+          "H_F4_P1_final_0",
+          "H_F4_P1_final_1",
+          "H_F4_P2_final_0",
+          "H_F4_P2_final_1",
+          "H_T4_P1_final_0",
+          "H_T4_P1_final_1",
+          "H_T4_P2_final_0",
+          "H_T4_P2_final_1",
+          "H_U4_P1_final_0",
+          "H_U4_P1_final_1",
+          "H_U4_P2_final_0",
+          "H_U4_P2_final_1"
+        ]
+      },
+      "results": [
+        {
+          "id": "H_F4_P1_final_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "contradicts_payload": 0.09,
+                    "supports_payload": 0.86,
+                    "does_not_resolve": 0.05
+                  },
+                  "confidence": 0.78
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_F4_P1_final_1",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 0.9,
+                    "contradicts_payload": 0.08,
+                    "does_not_resolve": 0.02
+                  },
+                  "confidence": 0.86
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_F4_P2_final_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "does_not_resolve": 0.11,
+                    "supports_payload": 0.6799999999999999,
+                    "contradicts_payload": 0.21
+                  },
+                  "confidence": 0.53
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_F4_P2_final_1",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 0.97,
+                    "contradicts_payload": 0.03,
+                    "does_not_resolve": 0
+                  },
+                  "confidence": 0.95
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_T4_P1_final_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "does_not_resolve": 0,
+                    "supports_payload": 1,
+                    "contradicts_payload": 0
+                  },
+                  "confidence": 1
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        }
+      ],
+      "moreResults": true
+    }
+  }
+}

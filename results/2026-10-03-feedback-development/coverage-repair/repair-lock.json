@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-04T03:59:29.700319+00:00",
+  "original_artifact_sha256": {
+    "feedback-analysis.json": "cc4ebb2bad078c8cadd651b18239d4e249e0fe9e92fcf6caa88cd3ed2414be45",
+    "mechanism-lock.json": "d2b23efec9ffd9e3b6b43f608857eb67e360b0163a72f79ac5530efb29b1a6b4",
+    "correction-input-lock.json": "a5d4714a0e1fe05230b4724c62a07b7907d7decadee41c7ed8509720d647a6e2",
+    "initial-dataset.json": "e2190ecd52e7e1268382738734dc388e370327974513363a57de5c74a90a37fa",
+    "correction-dataset.json": "fc688907c3172de3098cd2edcc73f1b38980617d857614658c897aeb474c2619",
+    "initial/events.jsonl": "c43184053881e7c62c238b579129fc3f6230f31341885db3bab7f5d70297bddb",
+    "corrections/events.jsonl": "0c225610c020a980f3b7be041e658eea2822040fb4513a47d0b10570ccc9f0d1",
+    "initial-reviews.json": "16e040f9b19d34c5308a52a0f909575c926c031a8f7739203623f53f35e61f6b",
+    "initial-review-request.json": "61db3d5d17856c9dd7eccf474fa2bc36d581c5fa2b6b2b943cf4d900d38ada1e",
+    "initial-review-result.json": "cb4acb1cd706322349a9636e3f58d7d350aa550c5cfc0e3576a19e8950796752",
+    "initial-review-bindings.json": "552f5a2fa01429da16d8dc03133165b3f69a7604e5f566f014e5d420295e5e64",
+    "initial-trace-result.json": "754115620b2e5222763b29099aa0f76ec85f6d1af72db08e1e6774e8d77fdd7d",
+    "final-reviews.json": "8d118d3426142d618817870511fcf09ae24a8069646cbf27090794a809b70817",
+    "final-review-request.json": "6e8d940aa977492c5e756e4ba5e5268d72298de13a923f11b9e9dbc3e8317eef",
+    "final-review-result.json": "e54c9f13b2caac0b77ce4cbcfaf9dcb2bb0dec1cb07af0e66ec41542b1a5c4fa",
+    "final-review-bindings.json": "e8b25cfd3d333a4a33417074e54b5c7bab87fd2d173e5d655466e6a5d7a343b9",
+    "final-trace-result.json": "7c6024d6e79757be957afb36bc7275b497e44c4356e4b807b72e0bb01be135b1"
+  },
+  "repair_source_sha256": {
+    "scripts/repair_feedback_coverage.py": "afef2c5f92b6f8dbc5d5d3734685c546164ed9cea949bcae62ecd5907939c898",
+    "scripts/jev_review_records.py": "c4978b832a663cf5f5c01403b918ab20d404383bd0b2a6ab587c6db5df1740ed",
+    "scripts/visible_plan_validator.py": "bb00d826cbb2cbc0d0cdc2b61567cb71fd6c6efa17f1131e2f34f230ea9b926a"
+  },
+  "new_model_calls": 0,
+  "scope": "Saved judgment recovery and final gate recomputation only; original feedback stays unchanged."
+}

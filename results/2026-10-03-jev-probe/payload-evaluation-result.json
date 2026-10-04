@@ -1,0 +1,272 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"runId\":\"11b619b6-0dc1-42bd-94f9-463ed7fb1a3b\",\"status\":\"complete\",\"capability\":{\"name\":\"omkt_payload_consistency\",\"version\":1,\"hash\":\"3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544\"},\"summary\":{\"modelCalls\":6,\"httpAttempts\":6,\"cacheHits\":0,\"reportedCostUsd\":0,\"unreportedCosts\":6,\"inputTokens\":4064,\"outputTokens\":284,\"totalItems\":6,\"completedItems\":6,\"selectedIds\":[\"conditional_future\",\"generic_check\",\"H_R1_P2_original\",\"H_R1_P2_repaired\",\"H_S3_P1_original\",\"H_S3_P1_repaired\"]},\"results\":[{\"id\":\"H_R1_P2_original\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"contradicts_payload\",\"probabilities\":{\"contradicts_payload\":1,\"does_not_resolve\":0,\"supports_payload\":0},\"confidence\":1}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_R1_P2_repaired\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"contradicts_payload\":0.02,\"supports_payload\":0.98,\"does_not_resolve\":0},\"confidence\":0.97}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_S3_P1_original\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"contradicts_payload\",\"probabilities\":{\"contradicts_payload\":1,\"does_not_resolve\":0,\"supports_payload\":0},\"confidence\":1}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_S3_P1_repaired\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"does_not_resolve\":0,\"contradicts_payload\":0,\"supports_payload\":1},\"confidence\":1}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"generic_check\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"does_not_resolve\",\"probabilities\":{\"contradicts_payload\":0.01,\"does_not_resolve\":0.97,\"supports_payload\":0.02},\"confidence\":0.96}},\"cached\":false}},\"selected\":true,\"rank\":null}],\"moreResults\":true,\"evaluation\":{\"kind\":\"authored_test_evaluation\",\"capability\":{\"name\":\"omkt_payload_consistency\",\"version\":1,\"hash\":\"3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544\"},\"checks\":[{\"id\":\"H_R1_P2_original\",\"passed\":true,\"failed\":[]},{\"id\":\"H_R1_P2_repaired\",\"passed\":true,\"failed\":[]},{\"id\":\"H_S3_P1_original\",\"passed\":true,\"failed\":[]},{\"id\":\"H_S3_P1_repaired\",\"passed\":true,\"failed\":[]},{\"id\":\"generic_check\",\"passed\":true,\"failed\":[]},{\"id\":\"conditional_future\",\"passed\":true,\"failed\":[]}],\"passed\":6,\"total\":6,\"expected\":[{\"id\":\"H_R1_P2_original\",\"expected\":[{\"stage\":\"review\",\"question\":\"relation\",\"op\":\"eq\",\"value\":\"contradicts_payload\"}]},{\"id\":\"H_R1_P2_repaired\",\"expected\":[{\"stage\":\"review\",\"question\":\"relation\",\"op\":\"eq\",\"value\":\"supports_payload\"}]},{\"id\":\"H_S3_P1_original\",\"expected\":[{\"stage\":\"review\",\"question\":\"relation\",\"op\":\"eq\",\"value\":\"contradicts_payload\"}]},{\"id\":\"H_S3_P1_repaired\",\"expected\":[{\"stage\":\"review\",\"question\":\"relation\",\"op\":\"eq\",\"value\":\"supports_payload\"}]},{\"id\":\"generic_check\",\"expected\":[{\"stage\":\"review\",\"question\":\"relation\",\"op\":\"eq\",\"value\":\"does_not_resolve\"}]},{\"id\":\"conditional_future\",\"expected\":[{\"stage\":\"review\",\"question\":\"relation\",\"op\":\"eq\",\"value\":\"does_not_resolve\"}]}],\"note\":\"Labels are caller-authored. Passing them is evidence for these examples, not independent validation.\"}}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "runId": "11b619b6-0dc1-42bd-94f9-463ed7fb1a3b",
+      "status": "complete",
+      "capability": {
+        "name": "omkt_payload_consistency",
+        "version": 1,
+        "hash": "3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544"
+      },
+      "summary": {
+        "modelCalls": 6,
+        "httpAttempts": 6,
+        "cacheHits": 0,
+        "reportedCostUsd": 0,
+        "unreportedCosts": 6,
+        "inputTokens": 4064,
+        "outputTokens": 284,
+        "totalItems": 6,
+        "completedItems": 6,
+        "selectedIds": [
+          "conditional_future",
+          "generic_check",
+          "H_R1_P2_original",
+          "H_R1_P2_repaired",
+          "H_S3_P1_original",
+          "H_S3_P1_repaired"
+        ]
+      },
+      "results": [
+        {
+          "id": "H_R1_P2_original",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "contradicts_payload",
+                  "probabilities": {
+                    "contradicts_payload": 1,
+                    "does_not_resolve": 0,
+                    "supports_payload": 0
+                  },
+                  "confidence": 1
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_R1_P2_repaired",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "contradicts_payload": 0.02,
+                    "supports_payload": 0.98,
+                    "does_not_resolve": 0
+                  },
+                  "confidence": 0.97
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_S3_P1_original",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "contradicts_payload",
+                  "probabilities": {
+                    "contradicts_payload": 1,
+                    "does_not_resolve": 0,
+                    "supports_payload": 0
+                  },
+                  "confidence": 1
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_S3_P1_repaired",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "does_not_resolve": 0,
+                    "contradicts_payload": 0,
+                    "supports_payload": 1
+                  },
+                  "confidence": 1
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "generic_check",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "does_not_resolve",
+                  "probabilities": {
+                    "contradicts_payload": 0.01,
+                    "does_not_resolve": 0.97,
+                    "supports_payload": 0.02
+                  },
+                  "confidence": 0.96
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        }
+      ],
+      "moreResults": true,
+      "evaluation": {
+        "kind": "authored_test_evaluation",
+        "capability": {
+          "name": "omkt_payload_consistency",
+          "version": 1,
+          "hash": "3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544"
+        },
+        "checks": [
+          {
+            "id": "H_R1_P2_original",
+            "passed": true,
+            "failed": []
+          },
+          {
+            "id": "H_R1_P2_repaired",
+            "passed": true,
+            "failed": []
+          },
+          {
+            "id": "H_S3_P1_original",
+            "passed": true,
+            "failed": []
+          },
+          {
+            "id": "H_S3_P1_repaired",
+            "passed": true,
+            "failed": []
+          },
+          {
+            "id": "generic_check",
+            "passed": true,
+            "failed": []
+          },
+          {
+            "id": "conditional_future",
+            "passed": true,
+            "failed": []
+          }
+        ],
+        "passed": 6,
+        "total": 6,
+        "expected": [
+          {
+            "id": "H_R1_P2_original",
+            "expected": [
+              {
+                "stage": "review",
+                "question": "relation",
+                "op": "eq",
+                "value": "contradicts_payload"
+              }
+            ]
+          },
+          {
+            "id": "H_R1_P2_repaired",
+            "expected": [
+              {
+                "stage": "review",
+                "question": "relation",
+                "op": "eq",
+                "value": "supports_payload"
+              }
+            ]
+          },
+          {
+            "id": "H_S3_P1_original",
+            "expected": [
+              {
+                "stage": "review",
+                "question": "relation",
+                "op": "eq",
+                "value": "contradicts_payload"
+              }
+            ]
+          },
+          {
+            "id": "H_S3_P1_repaired",
+            "expected": [
+              {
+                "stage": "review",
+                "question": "relation",
+                "op": "eq",
+                "value": "supports_payload"
+              }
+            ]
+          },
+          {
+            "id": "generic_check",
+            "expected": [
+              {
+                "stage": "review",
+                "question": "relation",
+                "op": "eq",
+                "value": "does_not_resolve"
+              }
+            ]
+          },
+          {
+            "id": "conditional_future",
+            "expected": [
+              {
+                "stage": "review",
+                "question": "relation",
+                "op": "eq",
+                "value": "does_not_resolve"
+              }
+            ]
+          }
+        ],
+        "note": "Labels are caller-authored. Passing them is evidence for these examples, not independent validation."
+      }
+    }
+  }
+}

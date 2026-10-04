@@ -1,0 +1,39 @@
+{
+  "attempts": 72,
+  "finished": 72,
+  "statuses": {
+    "complete": 72
+  },
+  "request_seconds_total": 325.88507374422625,
+  "wall_seconds_first_start_to_last_finish": 327.033059,
+  "median_request_seconds": 4.231741018476896,
+  "load_seconds_total": 9.223928485,
+  "generated_tokens_total": 7879,
+  "returned_thinking_count": 0,
+  "style_by_condition": {
+    "P0": {
+      "responses": 24,
+      "answer_words_total": 1717,
+      "answer_words_mean": 71.54166666666667,
+      "answer_words_median": 71.5,
+      "request_seconds_total": 98.71847646089736,
+      "request_seconds_median": 4.062037818948738
+    },
+    "P1": {
+      "responses": 24,
+      "answer_words_total": 2147,
+      "answer_words_mean": 89.45833333333333,
+      "answer_words_median": 89.0,
+      "request_seconds_total": 111.44485282059759,
+      "request_seconds_median": 4.598100100934971
+    },
+    "P2": {
+      "responses": 24,
+      "answer_words_total": 1991,
+      "answer_words_mean": 82.95833333333333,
+      "answer_words_median": 81.0,
+      "request_seconds_total": 115.7217444627313,
+      "request_seconds_median": 4.307433644484263
+    }
+  }
+}

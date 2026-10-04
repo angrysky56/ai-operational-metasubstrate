@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-10-04T01:26:35.257518+00:00",
+  "checks": {
+    "archive:data/challenge-dev-v1.json": true,
+    "source:data/challenge-dev-v1.json": true,
+    "archive:docs/challenge-development-protocol.md": true,
+    "source:docs/challenge-development-protocol.md": true,
+    "archive:scripts/build_challenge.py": true,
+    "source:scripts/build_challenge.py": true,
+    "archive:scripts/grade_challenge.py": true,
+    "corrected_grader": true,
+    "archive:scripts/audit_challenge.py": true,
+    "source:scripts/audit_challenge.py": true,
+    "archive:scripts/run_ollama.py": true,
+    "source:scripts/run_ollama.py": true,
+    "saved_dataset_hash": true,
+    "freeze_before_first_request": true,
+    "exact_request_messages": true,
+    "no_duplicate_attempted_cells": true,
+    "all_planned_attempts_terminal": true,
+    "terminal_budget_accounting": true,
+    "inputs_within_context": true,
+    "condition_text_unchanged": true
+  },
+  "all_pass": true,
+  "tests": "19 tests passed including actual paired analysis, incomplete answers, permissions, and new safety flags"
+}

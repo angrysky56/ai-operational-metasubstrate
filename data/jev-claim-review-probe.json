@@ -1,0 +1,33 @@
+{
+  "name": "claim_router",
+  "version": 1,
+  "items": [
+    {
+      "id": "scoped_settings_result",
+      "data": {
+        "claim": "This local development check motivates testing thinking-enabled settings before another framing study. It does not establish a benefit of self-model framing.",
+        "basis": "The recorded P0-only experiment held context fixed, crossed thinking mode and generation cap, and used three previously studied development cases. Thinking with the larger cap repaired the premise and maintenance plans, while the simulator plan remained wrong. The experiment did not compare P1 with P2 and used only one installed model.",
+        "action": "Validate thinking-enabled settings across development families, then freeze a separate matched framing comparison."
+      }
+    },
+    {
+      "id": "overgeneralization_control",
+      "data": {
+        "claim": "Self-model framing generally makes advanced models worse at reasoning.",
+        "basis": "One non-thinking local derivative performed worse under P2 than P1 on a small author-designed structured bank. There was no independent review, independent model replication or thinking-enabled framing comparison.",
+        "action": "Reject self-model framing for advanced models in general."
+      }
+    },
+    {
+      "id": "deterministic_failure",
+      "data": {
+        "claim": "The submitted schedule violates its allowed-slot constraint and must not be recorded as a valid plan.",
+        "basis": "The code validator computed B's slot from the actual submitted order and found it outside the allowed-slot list supplied in the task. This is a deterministic constraint violation, not an impression from the model's explanation.",
+        "action": "Return the constraint failure to the generator and require validation of an actual replacement plan."
+      }
+    }
+  ],
+  "context": {},
+  "maxCalls": 3,
+  "useCache": false
+}

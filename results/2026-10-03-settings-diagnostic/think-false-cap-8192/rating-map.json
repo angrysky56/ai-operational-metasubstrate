@@ -1,0 +1,20 @@
+[
+  {
+    "label": "answer-001",
+    "cell": "C-S1-P0",
+    "case_id": "C-S1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-002",
+    "cell": "C-G1-P0",
+    "case_id": "C-G1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-003",
+    "cell": "C-F1-P0",
+    "case_id": "C-F1",
+    "condition": "P0"
+  }
+]

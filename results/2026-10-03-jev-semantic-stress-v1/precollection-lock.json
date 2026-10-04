@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-04T03:59:44.878399+00:00",
+  "source_hashes": {
+    "scripts/run_jev_semantic_stress.py": "baf4c6945c380842b813450d9c11c073abb7ef540bb69eb067123dd23a31464d",
+    "scripts/jev_review_records.py": "c4978b832a663cf5f5c01403b918ab20d404383bd0b2a6ab587c6db5df1740ed",
+    "scripts/feedback_harness.py": "b241c18b5d540ce7bab62e929e2f4949268f8a98c7efe60998af9969c7c2e668",
+    "scripts/visible_plan_validator.py": "bb00d826cbb2cbc0d0cdc2b61567cb71fd6c6efa17f1131e2f34f230ea9b926a",
+    "harness/jev-client.ts": "c36733722bb683131b38393c2058fe80906166ddc2b4ac212d40bfd6352c8b50",
+    "harness/package-lock.json": "c7261b57b7a3daf557f5daef5c77de26d4b1148ece163a2dcc8fd59bdd5ddb23",
+    "data/jev-semantic-stress-v1.json": "dfd1796d929406c33091adadd3b120546925536c66b47dc29c3eade48edde5db",
+    "docs/jev-semantic-stress-protocol.md": "3802b4ea29c38f16e49f51eda32807c05975cbe389d783eee360608de345dc99"
+  },
+  "capability": {
+    "name": "omkt_payload_consistency",
+    "version": 1,
+    "hash": "3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544"
+  },
+  "semantic_item_limit": 12,
+  "actor_attempt_limit": 0
+}

@@ -1,0 +1,15 @@
+{
+  "rate_source": "Ty supplied these rates in this chat on October 3, 2026; not independently verified billing.",
+  "input_usd_per_million": "0.04",
+  "output_usd_per_million": "0",
+  "recorded_input_tokens": 7990,
+  "recorded_output_tokens": 723,
+  "estimated_usd": "0.0003196",
+  "model_calls": 9,
+  "native_host_connection_verified": true,
+  "native_read_operations": [
+    "get_capability omkt_payload_consistency v1",
+    "get_run 11b619b6-0dc1-42bd-94f9-463ed7fb1a3b"
+  ],
+  "additional_inference_calls_for_host_verification": 0
+}

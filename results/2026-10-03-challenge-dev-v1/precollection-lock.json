@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-10-04T00:47:47.122858+00:00",
+  "stage": "development_only",
+  "source_hashes": {
+    "data/challenge-dev-v1.json": "583810d2730053264ebfd0f2f7b3ebbf322dd13ae3382b1f3d3923706667a407",
+    "docs/challenge-development-protocol.md": "dd27df8e51010fec611ceddce478e670ddd969cf54f7e0831954347812a4f0ed",
+    "scripts/build_challenge.py": "6136f8242f0a2f90464593306b35123ade156fb95d1eab0f0ac0f82dea7e1f29",
+    "scripts/grade_challenge.py": "f5df6903475277324c915b19792f879958601662f5a655b7d0cf4a5560b2fc94",
+    "scripts/audit_challenge.py": "70bc51f28ca428ad8aad4c11949fc2354be37ab46c19668c74617017510c06f7",
+    "scripts/run_ollama.py": "2f6b61d01b77f140670a31992266e7332e3d16f2fa7c4cd5a696c5e9af85634b"
+  }
+}

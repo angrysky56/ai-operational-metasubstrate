@@ -1,0 +1,167 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"runId\":\"c7805514-dd05-4578-b7b2-befb80ace82b\",\"status\":\"complete\",\"capability\":{\"name\":\"omkt_payload_consistency\",\"version\":1,\"hash\":\"3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544\"},\"summary\":{\"modelCalls\":12,\"httpAttempts\":12,\"cacheHits\":0,\"reportedCostUsd\":0,\"unreportedCosts\":12,\"inputTokens\":8625,\"outputTokens\":552,\"totalItems\":12,\"completedItems\":12,\"selectedIds\":[\"H_F4_P2_initial_0\",\"H_F4_P2_initial_1\",\"H_G4_P1_initial_0\",\"H_G4_P1_initial_1\",\"H_T4_P1_initial_0\",\"H_T4_P1_initial_1\",\"H_T4_P2_initial_0\",\"H_T4_P2_initial_1\",\"H_U4_P1_initial_0\",\"H_U4_P1_initial_1\",\"H_U4_P2_initial_0\",\"H_U4_P2_initial_1\"]},\"results\":[{\"id\":\"H_F4_P2_initial_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":0.92,\"contradicts_payload\":0.06,\"does_not_resolve\":0.02},\"confidence\":0.88}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_F4_P2_initial_1\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":0.96,\"does_not_resolve\":0.01,\"contradicts_payload\":0.03},\"confidence\":0.95}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_T4_P1_initial_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":1,\"does_not_resolve\":0,\"contradicts_payload\":0},\"confidence\":1}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_T4_P1_initial_1\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"contradicts_payload\":0.04,\"supports_payload\":0.93,\"does_not_resolve\":0.03},\"confidence\":0.89}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_T4_P2_initial_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":0.99,\"contradicts_payload\":0.01,\"does_not_resolve\":0},\"confidence\":0.99}},\"cached\":false}},\"selected\":true,\"rank\":null}],\"moreResults\":true}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+      "status": "complete",
+      "capability": {
+        "name": "omkt_payload_consistency",
+        "version": 1,
+        "hash": "3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544"
+      },
+      "summary": {
+        "modelCalls": 12,
+        "httpAttempts": 12,
+        "cacheHits": 0,
+        "reportedCostUsd": 0,
+        "unreportedCosts": 12,
+        "inputTokens": 8625,
+        "outputTokens": 552,
+        "totalItems": 12,
+        "completedItems": 12,
+        "selectedIds": [
+          "H_F4_P2_initial_0",
+          "H_F4_P2_initial_1",
+          "H_G4_P1_initial_0",
+          "H_G4_P1_initial_1",
+          "H_T4_P1_initial_0",
+          "H_T4_P1_initial_1",
+          "H_T4_P2_initial_0",
+          "H_T4_P2_initial_1",
+          "H_U4_P1_initial_0",
+          "H_U4_P1_initial_1",
+          "H_U4_P2_initial_0",
+          "H_U4_P2_initial_1"
+        ]
+      },
+      "results": [
+        {
+          "id": "H_F4_P2_initial_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 0.92,
+                    "contradicts_payload": 0.06,
+                    "does_not_resolve": 0.02
+                  },
+                  "confidence": 0.88
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_F4_P2_initial_1",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 0.96,
+                    "does_not_resolve": 0.01,
+                    "contradicts_payload": 0.03
+                  },
+                  "confidence": 0.95
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_T4_P1_initial_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 1,
+                    "does_not_resolve": 0,
+                    "contradicts_payload": 0
+                  },
+                  "confidence": 1
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_T4_P1_initial_1",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "contradicts_payload": 0.04,
+                    "supports_payload": 0.93,
+                    "does_not_resolve": 0.03
+                  },
+                  "confidence": 0.89
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_T4_P2_initial_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 0.99,
+                    "contradicts_payload": 0.01,
+                    "does_not_resolve": 0
+                  },
+                  "confidence": 0.99
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        }
+      ],
+      "moreResults": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-10-04T01:01:25.560421+00:00",
+  "stage": "instance_holdout_within_shared_templates",
+  "primary": "P2-P1 complete final structured payload correctness",
+  "source_hashes": {
+    "data/challenge-test-v1.json": "4a08df921ebaf3f8cd05614bff51d2abc34aacad5217f212106667ea782ede0f",
+    "docs/challenge-test-v1-protocol.md": "f1c9fba45cf53c1fc5bb50eb06b55a7c751f0fa18addba733cf2263d035c3265",
+    "scripts/build_challenge_test.py": "a88db8664f2009ab1921ad4d406084fbf487007d95c679ebe664d0fdf720fb67",
+    "scripts/build_challenge.py": "6136f8242f0a2f90464593306b35123ade156fb95d1eab0f0ac0f82dea7e1f29",
+    "scripts/grade_challenge.py": "fa5b57cecf044e1b5e994272224748a00a60ca94266b3922844f600df3fd0872",
+    "scripts/audit_challenge.py": "70bc51f28ca428ad8aad4c11949fc2354be37ab46c19668c74617017510c06f7",
+    "scripts/analyze_challenge_test.py": "33c3f5377b2bed5729b72363d6e83a60fe1b66d820b4b5ebc85f86e280804f00",
+    "scripts/run_ollama.py": "2f6b61d01b77f140670a31992266e7332e3d16f2fa7c4cd5a696c5e9af85634b"
+  }
+}

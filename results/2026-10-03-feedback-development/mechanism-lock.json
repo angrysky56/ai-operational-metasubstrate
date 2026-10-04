@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-10-04T03:41:35.781241+00:00",
+  "source_hashes": {
+    "scripts/feedback_harness.py": "85d99eaf1dfe33b2ac5fb0b43b876d9cd28207bf2a009250dfc6afbac57dedbd",
+    "scripts/visible_plan_validator.py": "74342d62d25736165af9921b3da29002cc7c5fbd79858d3a65f51d327459c850",
+    "scripts/run_ollama.py": "2f6b61d01b77f140670a31992266e7332e3d16f2fa7c4cd5a696c5e9af85634b",
+    "scripts/grade_challenge.py": "fa5b57cecf044e1b5e994272224748a00a60ca94266b3922844f600df3fd0872",
+    "scripts/analyze_challenge_test.py": "33c3f5377b2bed5729b72363d6e83a60fe1b66d820b4b5ebc85f86e280804f00",
+    "data/visible-policy-headers.json": "4e547207e7c93ac401a89159f553aebc46ca9bc27ea7071520c9fde5900bd03b",
+    "harness/jev-client.ts": "c36733722bb683131b38393c2058fe80906166ddc2b4ac212d40bfd6352c8b50",
+    "harness/package.json": "ddc482277d5b3495c50994f8d714f5576ff53eee7217552fff19e6d0c4a6d405",
+    "harness/package-lock.json": "c7261b57b7a3daf557f5daef5c77de26d4b1148ece163a2dcc8fd59bdd5ddb23",
+    "docs/feedback-development-protocol.md": "2b75fbaa4908d1679a869804a48b4ed4e18eea2b2cf58478956ba745d68e2d68"
+  },
+  "capability": {
+    "name": "omkt_payload_consistency",
+    "version": 1,
+    "hash": "3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544"
+  },
+  "initial_dataset_sha256": "e2190ecd52e7e1268382738734dc388e370327974513363a57de5c74a90a37fa",
+  "correction_arms": [
+    "SELF",
+    "CODE",
+    "JEV"
+  ],
+  "actor_attempt_limit": 24,
+  "semantic_item_limit": 24,
+  "shared_initials": true
+}

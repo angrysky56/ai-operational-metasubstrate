@@ -1,0 +1,73 @@
+{
+  "by_case": {
+    "C-F1": [
+      {
+        "case_id": "C-F1",
+        "field_path": "status.R1",
+        "candidate_sha256": "39401ae7d61bc4521592c3306c5bf98ba5a5eef11488aa7db290ec551b8ee884",
+        "source_sha256": "b9c8b398e5e020b2dd744e130c084bfd22730e24d1d32bee92e098348a0918c9",
+        "status": "complete",
+        "runId": "f2d9e679-09c6-4441-b157-87bc41c538b4",
+        "item_id": "C_F1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "C-F1",
+        "field_path": "status.R2",
+        "candidate_sha256": "39401ae7d61bc4521592c3306c5bf98ba5a5eef11488aa7db290ec551b8ee884",
+        "source_sha256": "b9c8b398e5e020b2dd744e130c084bfd22730e24d1d32bee92e098348a0918c9",
+        "status": "complete",
+        "runId": "f2d9e679-09c6-4441-b157-87bc41c538b4",
+        "item_id": "C_F1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "C-T1": [
+      {
+        "case_id": "C-T1",
+        "field_path": "cause",
+        "candidate_sha256": "7684432374860aa95b8bc0015eb82a82580dd788ff3d54db89dd80e1f6ea1520",
+        "source_sha256": "c8289831b3e7d105538089aca3d7c6d1e3968838d40e7087856a858b53bc7b93",
+        "status": "complete",
+        "runId": "f2d9e679-09c6-4441-b157-87bc41c538b4",
+        "item_id": "C_T1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "C-T1",
+        "field_path": "highest_heads",
+        "candidate_sha256": "7684432374860aa95b8bc0015eb82a82580dd788ff3d54db89dd80e1f6ea1520",
+        "source_sha256": "c8289831b3e7d105538089aca3d7c6d1e3968838d40e7087856a858b53bc7b93",
+        "status": "complete",
+        "runId": "f2d9e679-09c6-4441-b157-87bc41c538b4",
+        "item_id": "C_T1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "C-U1": [
+      {
+        "case_id": "C-U1",
+        "field_path": "commit",
+        "candidate_sha256": "778cba68e682608508dd468838b816413f3f967365bad2223764f137996c0c40",
+        "source_sha256": "c361b96a4d9390b265a34b70943a601c3c0e617af785abd35dd9b0a4a158c3f3",
+        "status": "complete",
+        "runId": "f2d9e679-09c6-4441-b157-87bc41c538b4",
+        "item_id": "C_U1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "C-G1": [],
+    "C-S1": [],
+    "C-R1": []
+  }
+}

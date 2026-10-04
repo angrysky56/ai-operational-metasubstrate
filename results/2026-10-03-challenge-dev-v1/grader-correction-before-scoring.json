@@ -1,0 +1,6 @@
+{
+  "recorded_at": "2026-10-04T00:48:21.524418+00:00",
+  "phase": "generation_running_before_outputs_read_or_scores_computed",
+  "change": "Require every requested top-level field to be present, including fields whose correct value is null. The protocol already requires all fields; missing null-valued fields had been incorrectly accepted. Added regression test. No model inputs or keys changed. Original frozen grader remains preserved.",
+  "source_sha256": "fa5b57cecf044e1b5e994272224748a00a60ca94266b3922844f600df3fd0872"
+}

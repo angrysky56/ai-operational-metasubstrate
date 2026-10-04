@@ -1,0 +1,10 @@
+{
+  "sealed_at": "2026-10-04T00:32:26.401789+00:00",
+  "ratings_sha256": "21c08f1d549dd49413c397ed47dad4bd6326bebf9f80d18c03a824c18816fe02",
+  "rating_count": 72,
+  "reviewer": "Codex root AI reviewer; also bank author",
+  "condition_mapping_consulted_before_seal": false,
+  "independent_review": false,
+  "rubric": "frozen-pilot-v1-protocol.md",
+  "notes": "All answers scored individually from opaque rating packet. Treatment mapping and raw generated content were not opened before this seal. Styles may reveal treatment; not fully blinded human evaluation."
+}

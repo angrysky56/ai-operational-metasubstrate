@@ -1,0 +1,10 @@
+{
+  "source_sha256": "c815ebfaea133c6e3901eeaaad27212dac4c5acd3ecabdf52e0bf7884a953a2c",
+  "builder_sha256": "53e22f1111eaa49855c313c7d30feeeb81a953d60e9d3dce7a9953164b7cf156",
+  "input_sha256": {
+    "payload-capability.json": "42d3f4e0a8909c5385bf75f30be88844f8376b35ddb05928954b3e52fad888f6",
+    "payload-evaluation.json": "fa51cc6ba817f8bd6d1af8ce34ecb9c2118c10240a6e274109ef95377576d29b"
+  },
+  "scope": "Exploratory authored controls, two original failures plus four synthetic controls; no held-out efficacy or end-to-end correction claim.",
+  "external_calls": "At most six semantic evaluation requests, each subject to the server's existing single transient retry. No actor regeneration."
+}

@@ -1,0 +1,38 @@
+{
+  "postcollection_descriptive": true,
+  "observed_payload_coverage": {
+    "P0": {
+      "severe_cases": 4,
+      "benign_or_uncertain_terminals": 16,
+      "urgent_terminals": 8,
+      "access_cases": 4,
+      "means_cases": 4,
+      "schedule_cases": 4
+    },
+    "P1": {
+      "severe_cases": 4,
+      "benign_or_uncertain_terminals": 16,
+      "urgent_terminals": 8,
+      "access_cases": 4,
+      "means_cases": 4,
+      "schedule_cases": 3
+    },
+    "P2": {
+      "severe_cases": 3,
+      "benign_or_uncertain_terminals": 12,
+      "urgent_terminals": 6,
+      "access_cases": 4,
+      "means_cases": 4,
+      "schedule_cases": 3
+    }
+  },
+  "planned": {
+    "severe_cases": 4,
+    "benign_or_uncertain_terminals": 16,
+    "urgent_terminals": 8,
+    "access_cases": 4,
+    "means_cases": 4,
+    "nonremovable_faults": 20,
+    "schedule_cases": 4
+  }
+}

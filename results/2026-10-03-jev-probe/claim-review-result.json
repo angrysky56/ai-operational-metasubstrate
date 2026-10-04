@@ -1,0 +1,274 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"runId\":\"84a4262f-c685-4b7c-a1ac-695b24a64411\",\"status\":\"complete\",\"capability\":{\"name\":\"claim_router\",\"version\":1,\"hash\":\"0eb1ec6a11514506c346c6e77bcabb2efc0813f1dd7a34c6813facf0a8108788\"},\"summary\":{\"modelCalls\":3,\"httpAttempts\":3,\"cacheHits\":0,\"reportedCostUsd\":0,\"unreportedCosts\":3,\"inputTokens\":3926,\"outputTokens\":439,\"totalItems\":3,\"completedItems\":3,\"selectedIds\":[\"overgeneralization_control\",\"scoped_settings_result\",\"deterministic_failure\"],\"routes\":{\"prove\":[\"deterministic_failure\"],\"check_sample\":[\"overgeneralization_control\"],\"second_opinion\":[\"scoped_settings_result\"]}},\"results\":[{\"id\":\"scoped_settings_result\",\"status\":\"complete\",\"stages\":{\"triage\":{\"status\":\"complete\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.25},\"certainty\":{\"type\":\"score\",\"score\":2.02,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0.01,\"2\":0.95,\"3\":0.04},\"confidence\":0.95},\"mode\":{\"type\":\"choice\",\"choice\":\"recommendation\",\"probabilities\":{\"recommendation\":0.41,\"unsupported\":0.01,\"abduction\":0.04,\"deduction\":0.3,\"induction\":0.24},\"confidence\":0.26},\"overclaim\":{\"type\":\"noul\",\"noul\":0.32},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.43},\"stakes\":{\"type\":\"score\",\"score\":0.99,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.08,\"1\":0.85,\"2\":0.07},\"confidence\":0.78}},\"cached\":false}},\"selected\":true,\"rank\":0.38049999999999995,\"composites\":{\"priority\":0.38049999999999995,\"warrant_risk\":0.332},\"route\":\"second_opinion\"},{\"id\":\"overgeneralization_control\",\"status\":\"complete\",\"stages\":{\"triage\":{\"status\":\"complete\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.31},\"certainty\":{\"type\":\"score\",\"score\":1.83,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0.18,\"2\":0.81,\"3\":0.01},\"confidence\":0.81},\"mode\":{\"type\":\"choice\",\"choice\":\"induction\",\"probabilities\":{\"recommendation\":0.03,\"unsupported\":0.03,\"abduction\":0,\"deduction\":0,\"induction\":0.94},\"confidence\":0.93},\"overclaim\":{\"type\":\"noul\",\"noul\":0.94},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.97},\"stakes\":{\"type\":\"score\",\"score\":1.17,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.08,\"1\":0.67,\"2\":0.25},\"confidence\":0.51}},\"cached\":false}},\"selected\":true,\"rank\":0.7135,\"composites\":{\"priority\":0.7135,\"warrant_risk\":0.76},\"route\":\"check_sample\"},{\"id\":\"deterministic_failure\",\"status\":\"complete\",\"stages\":{\"triage\":{\"status\":\"complete\",\"answers\":{\"absence_as_evidence\":{\"type\":\"noul\",\"noul\":0.03},\"certainty\":{\"type\":\"score\",\"score\":2.04,\"legend\":{\"0\":\"Explicitly tentative: might, possibly, one hypothesis, a guess\",\"1\":\"Probable: probably, likely, suggests, plausibly, most likely\",\"2\":\"Stated as plain fact with no hedge\",\"3\":\"Absolute: always, never, certainly, proves, impossible, nothing else could\"},\"probabilities\":{\"0\":0,\"1\":0,\"2\":0.96,\"3\":0.04},\"confidence\":0.96},\"mode\":{\"type\":\"choice\",\"choice\":\"deduction\",\"probabilities\":{\"induction\":0,\"deduction\":0.93,\"unsupported\":0,\"abduction\":0.02,\"recommendation\":0.05},\"confidence\":0.91},\"overclaim\":{\"type\":\"noul\",\"noul\":0.15},\"scope_gap\":{\"type\":\"noul\",\"noul\":0.2},\"stakes\":{\"type\":\"score\",\"score\":1.08,\"legend\":{\"0\":\"Low: harmless or trivially undone, such as a wording choice or a log message\",\"1\":\"Medium: wasted time, rework, or a confusing result that someone would notice and fix\",\"2\":\"High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production\"},\"probabilities\":{\"0\":0.04,\"1\":0.84,\"2\":0.12},\"confidence\":0.77}},\"cached\":false}},\"selected\":true,\"rank\":0.253,\"composites\":{\"priority\":0.253,\"warrant_risk\":0.129},\"route\":\"prove\"}],\"moreResults\":false}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "runId": "84a4262f-c685-4b7c-a1ac-695b24a64411",
+      "status": "complete",
+      "capability": {
+        "name": "claim_router",
+        "version": 1,
+        "hash": "0eb1ec6a11514506c346c6e77bcabb2efc0813f1dd7a34c6813facf0a8108788"
+      },
+      "summary": {
+        "modelCalls": 3,
+        "httpAttempts": 3,
+        "cacheHits": 0,
+        "reportedCostUsd": 0,
+        "unreportedCosts": 3,
+        "inputTokens": 3926,
+        "outputTokens": 439,
+        "totalItems": 3,
+        "completedItems": 3,
+        "selectedIds": [
+          "overgeneralization_control",
+          "scoped_settings_result",
+          "deterministic_failure"
+        ],
+        "routes": {
+          "prove": [
+            "deterministic_failure"
+          ],
+          "check_sample": [
+            "overgeneralization_control"
+          ],
+          "second_opinion": [
+            "scoped_settings_result"
+          ]
+        }
+      },
+      "results": [
+        {
+          "id": "scoped_settings_result",
+          "status": "complete",
+          "stages": {
+            "triage": {
+              "status": "complete",
+              "answers": {
+                "absence_as_evidence": {
+                  "type": "noul",
+                  "noul": 0.25
+                },
+                "certainty": {
+                  "type": "score",
+                  "score": 2.02,
+                  "legend": {
+                    "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                    "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                    "2": "Stated as plain fact with no hedge",
+                    "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                  },
+                  "probabilities": {
+                    "0": 0,
+                    "1": 0.01,
+                    "2": 0.95,
+                    "3": 0.04
+                  },
+                  "confidence": 0.95
+                },
+                "mode": {
+                  "type": "choice",
+                  "choice": "recommendation",
+                  "probabilities": {
+                    "recommendation": 0.41,
+                    "unsupported": 0.01,
+                    "abduction": 0.04,
+                    "deduction": 0.3,
+                    "induction": 0.24
+                  },
+                  "confidence": 0.26
+                },
+                "overclaim": {
+                  "type": "noul",
+                  "noul": 0.32
+                },
+                "scope_gap": {
+                  "type": "noul",
+                  "noul": 0.43
+                },
+                "stakes": {
+                  "type": "score",
+                  "score": 0.99,
+                  "legend": {
+                    "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                    "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                    "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                  },
+                  "probabilities": {
+                    "0": 0.08,
+                    "1": 0.85,
+                    "2": 0.07
+                  },
+                  "confidence": 0.78
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": 0.38049999999999995,
+          "composites": {
+            "priority": 0.38049999999999995,
+            "warrant_risk": 0.332
+          },
+          "route": "second_opinion"
+        },
+        {
+          "id": "overgeneralization_control",
+          "status": "complete",
+          "stages": {
+            "triage": {
+              "status": "complete",
+              "answers": {
+                "absence_as_evidence": {
+                  "type": "noul",
+                  "noul": 0.31
+                },
+                "certainty": {
+                  "type": "score",
+                  "score": 1.83,
+                  "legend": {
+                    "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                    "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                    "2": "Stated as plain fact with no hedge",
+                    "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                  },
+                  "probabilities": {
+                    "0": 0,
+                    "1": 0.18,
+                    "2": 0.81,
+                    "3": 0.01
+                  },
+                  "confidence": 0.81
+                },
+                "mode": {
+                  "type": "choice",
+                  "choice": "induction",
+                  "probabilities": {
+                    "recommendation": 0.03,
+                    "unsupported": 0.03,
+                    "abduction": 0,
+                    "deduction": 0,
+                    "induction": 0.94
+                  },
+                  "confidence": 0.93
+                },
+                "overclaim": {
+                  "type": "noul",
+                  "noul": 0.94
+                },
+                "scope_gap": {
+                  "type": "noul",
+                  "noul": 0.97
+                },
+                "stakes": {
+                  "type": "score",
+                  "score": 1.17,
+                  "legend": {
+                    "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                    "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                    "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                  },
+                  "probabilities": {
+                    "0": 0.08,
+                    "1": 0.67,
+                    "2": 0.25
+                  },
+                  "confidence": 0.51
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": 0.7135,
+          "composites": {
+            "priority": 0.7135,
+            "warrant_risk": 0.76
+          },
+          "route": "check_sample"
+        },
+        {
+          "id": "deterministic_failure",
+          "status": "complete",
+          "stages": {
+            "triage": {
+              "status": "complete",
+              "answers": {
+                "absence_as_evidence": {
+                  "type": "noul",
+                  "noul": 0.03
+                },
+                "certainty": {
+                  "type": "score",
+                  "score": 2.04,
+                  "legend": {
+                    "0": "Explicitly tentative: might, possibly, one hypothesis, a guess",
+                    "1": "Probable: probably, likely, suggests, plausibly, most likely",
+                    "2": "Stated as plain fact with no hedge",
+                    "3": "Absolute: always, never, certainly, proves, impossible, nothing else could"
+                  },
+                  "probabilities": {
+                    "0": 0,
+                    "1": 0,
+                    "2": 0.96,
+                    "3": 0.04
+                  },
+                  "confidence": 0.96
+                },
+                "mode": {
+                  "type": "choice",
+                  "choice": "deduction",
+                  "probabilities": {
+                    "induction": 0,
+                    "deduction": 0.93,
+                    "unsupported": 0,
+                    "abduction": 0.02,
+                    "recommendation": 0.05
+                  },
+                  "confidence": 0.91
+                },
+                "overclaim": {
+                  "type": "noul",
+                  "noul": 0.15
+                },
+                "scope_gap": {
+                  "type": "noul",
+                  "noul": 0.2
+                },
+                "stakes": {
+                  "type": "score",
+                  "score": 1.08,
+                  "legend": {
+                    "0": "Low: harmless or trivially undone, such as a wording choice or a log message",
+                    "1": "Medium: wasted time, rework, or a confusing result that someone would notice and fix",
+                    "2": "High: lost data, money, security, safety, or trust, or something hard to undo such as removing a safeguard or shipping to production"
+                  },
+                  "probabilities": {
+                    "0": 0.04,
+                    "1": 0.84,
+                    "2": 0.12
+                  },
+                  "confidence": 0.77
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": 0.253,
+          "composites": {
+            "priority": 0.253,
+            "warrant_risk": 0.129
+          },
+          "route": "prove"
+        }
+      ],
+      "moreResults": false
+    }
+  }
+}

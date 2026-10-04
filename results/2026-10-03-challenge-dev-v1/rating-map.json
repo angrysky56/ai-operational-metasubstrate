@@ -1,0 +1,140 @@
+[
+  {
+    "label": "answer-001",
+    "cell": "C-S1-P1",
+    "case_id": "C-S1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-002",
+    "cell": "C-S2-P1",
+    "case_id": "C-S2",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-003",
+    "cell": "C-R2-P0",
+    "case_id": "C-R2",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-004",
+    "cell": "C-R1-P1",
+    "case_id": "C-R1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-005",
+    "cell": "C-F1-P1",
+    "case_id": "C-F1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-006",
+    "cell": "C-F1-P0",
+    "case_id": "C-F1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-007",
+    "cell": "C-R1-P0",
+    "case_id": "C-R1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-008",
+    "cell": "C-G1-P0",
+    "case_id": "C-G1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-009",
+    "cell": "C-S1-P0",
+    "case_id": "C-S1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-010",
+    "cell": "C-T2-P1",
+    "case_id": "C-T2",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-011",
+    "cell": "C-T1-P0",
+    "case_id": "C-T1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-012",
+    "cell": "C-U1-P1",
+    "case_id": "C-U1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-013",
+    "cell": "C-T1-P1",
+    "case_id": "C-T1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-014",
+    "cell": "C-R2-P1",
+    "case_id": "C-R2",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-015",
+    "cell": "C-G1-P1",
+    "case_id": "C-G1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-016",
+    "cell": "C-F2-P1",
+    "case_id": "C-F2",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-017",
+    "cell": "C-G2-P0",
+    "case_id": "C-G2",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-018",
+    "cell": "C-G2-P1",
+    "case_id": "C-G2",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-019",
+    "cell": "C-S2-P0",
+    "case_id": "C-S2",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-020",
+    "cell": "C-U1-P0",
+    "case_id": "C-U1",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-021",
+    "cell": "C-F2-P0",
+    "case_id": "C-F2",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-022",
+    "cell": "C-T2-P0",
+    "case_id": "C-T2",
+    "condition": "P0"
+  },
+  {
+    "label": "answer-023",
+    "cell": "C-U2-P1",
+    "case_id": "C-U2",
+    "condition": "P1"
+  }
+]

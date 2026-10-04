@@ -1,0 +1,38 @@
+[
+  {
+    "label": "answer-001",
+    "cell": "C-S1-P1",
+    "case_id": "C-S1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-002",
+    "cell": "C-T1-P1",
+    "case_id": "C-T1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-003",
+    "cell": "C-G1-P1",
+    "case_id": "C-G1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-004",
+    "cell": "C-U1-P1",
+    "case_id": "C-U1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-005",
+    "cell": "C-F1-P1",
+    "case_id": "C-F1",
+    "condition": "P1"
+  },
+  {
+    "label": "answer-006",
+    "cell": "C-R1-P1",
+    "case_id": "C-R1",
+    "condition": "P1"
+  }
+]

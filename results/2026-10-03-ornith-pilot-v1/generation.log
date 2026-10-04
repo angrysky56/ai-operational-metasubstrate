@@ -1,0 +1,150 @@
+Request 1/72: S04-P2
+  complete: 15.2s; generated tokens=109
+Request 2/72: U03-P1
+  complete: 6.7s; generated tokens=158
+Request 3/72: S01-P1
+  complete: 4.9s; generated tokens=141
+Request 4/72: F01-P2
+  complete: 4.8s; generated tokens=129
+Request 5/72: G03-P1
+  complete: 4.1s; generated tokens=106
+Request 6/72: G03-P0
+  complete: 4.2s; generated tokens=104
+Request 7/72: R04-P2
+  complete: 4.2s; generated tokens=77
+Request 8/72: G04-P1
+  complete: 5.5s; generated tokens=159
+Request 9/72: T04-P0
+  complete: 6.4s; generated tokens=188
+Request 10/72: U02-P2
+  complete: 4.3s; generated tokens=115
+Request 11/72: S02-P0
+  complete: 4.8s; generated tokens=126
+Request 12/72: U03-P2
+  complete: 4.9s; generated tokens=137
+Request 13/72: F03-P2
+  complete: 3.5s; generated tokens=89
+Request 14/72: U04-P1
+  complete: 5.1s; generated tokens=141
+Request 15/72: F03-P1
+  complete: 3.8s; generated tokens=100
+Request 16/72: R03-P1
+  complete: 5.4s; generated tokens=129
+Request 17/72: S02-P2
+  complete: 3.5s; generated tokens=79
+Request 18/72: G01-P0
+  complete: 4.1s; generated tokens=98
+Request 19/72: S03-P1
+  complete: 3.3s; generated tokens=77
+Request 20/72: G02-P0
+  complete: 3.2s; generated tokens=66
+Request 21/72: S03-P2
+  complete: 4.3s; generated tokens=115
+Request 22/72: U03-P0
+  complete: 4.2s; generated tokens=105
+Request 23/72: U04-P0
+  complete: 3.7s; generated tokens=89
+Request 24/72: G03-P2
+  complete: 3.9s; generated tokens=100
+Request 25/72: G04-P0
+  complete: 4.2s; generated tokens=101
+Request 26/72: F02-P2
+  complete: 3.3s; generated tokens=75
+Request 27/72: T03-P0
+  complete: 3.9s; generated tokens=94
+Request 28/72: F04-P1
+  complete: 3.4s; generated tokens=82
+Request 29/72: T03-P1
+  complete: 4.2s; generated tokens=118
+Request 30/72: F01-P0
+  complete: 3.5s; generated tokens=76
+Request 31/72: U02-P1
+  complete: 4.1s; generated tokens=102
+Request 32/72: F01-P1
+  complete: 5.6s; generated tokens=165
+Request 33/72: T03-P2
+  complete: 4.4s; generated tokens=117
+Request 34/72: G01-P1
+  complete: 5.9s; generated tokens=167
+Request 35/72: R03-P2
+  complete: 5.2s; generated tokens=110
+Request 36/72: G02-P1
+  complete: 3.6s; generated tokens=85
+Request 37/72: R02-P2
+  complete: 4.8s; generated tokens=100
+Request 38/72: S02-P1
+  complete: 4.5s; generated tokens=118
+Request 39/72: G04-P2
+  complete: 4.5s; generated tokens=118
+Request 40/72: F02-P0
+  complete: 3.0s; generated tokens=61
+Request 41/72: S04-P1
+  complete: 3.6s; generated tokens=85
+Request 42/72: T01-P2
+  complete: 3.8s; generated tokens=96
+Request 43/72: U02-P0
+  complete: 3.6s; generated tokens=83
+Request 44/72: U01-P2
+  complete: 7.5s; generated tokens=232
+Request 45/72: S01-P0
+  complete: 3.6s; generated tokens=80
+Request 46/72: F02-P1
+  complete: 3.3s; generated tokens=76
+Request 47/72: S03-P0
+  complete: 4.2s; generated tokens=103
+Request 48/72: G02-P2
+  complete: 3.2s; generated tokens=72
+Request 49/72: R01-P2
+  complete: 3.8s; generated tokens=73
+Request 50/72: T01-P0
+  complete: 4.5s; generated tokens=113
+Request 51/72: R02-P1
+  complete: 4.7s; generated tokens=96
+Request 52/72: R01-P1
+  complete: 2.0s; generated tokens=29
+Request 53/72: T02-P2
+  complete: 5.1s; generated tokens=137
+Request 54/72: F04-P2
+  complete: 3.2s; generated tokens=77
+Request 55/72: T02-P0
+  complete: 5.6s; generated tokens=153
+Request 56/72: R04-P1
+  complete: 4.3s; generated tokens=77
+Request 57/72: S04-P0
+  complete: 4.5s; generated tokens=111
+Request 58/72: T01-P1
+  complete: 5.1s; generated tokens=140
+Request 59/72: T04-P2
+  complete: 5.7s; generated tokens=163
+Request 60/72: R04-P0
+  complete: 3.2s; generated tokens=30
+Request 61/72: U01-P1
+  complete: 6.8s; generated tokens=207
+Request 62/72: R02-P0
+  complete: 4.8s; generated tokens=97
+Request 63/72: F04-P0
+  complete: 3.3s; generated tokens=74
+Request 64/72: R01-P0
+  complete: 3.3s; generated tokens=45
+Request 65/72: T02-P1
+  complete: 5.6s; generated tokens=160
+Request 66/72: U01-P0
+  complete: 5.6s; generated tokens=155
+Request 67/72: R03-P0
+  complete: 4.0s; generated tokens=103
+Request 68/72: U04-P2
+  complete: 4.6s; generated tokens=121
+Request 69/72: S01-P2
+  complete: 3.9s; generated tokens=104
+Request 70/72: G01-P2
+  complete: 4.1s; generated tokens=113
+Request 71/72: F03-P0
+  complete: 3.3s; generated tokens=72
+Request 72/72: T04-P1
+  complete: 6.0s; generated tokens=176
+{
+  "finished": {
+    "complete": 72
+  },
+  "output": "/home/ty/Repositories/ai_workspace/ai-operational-metasubstrate/results/2026-10-03-ornith-pilot-v1"
+}

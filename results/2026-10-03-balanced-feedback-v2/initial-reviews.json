@@ -1,0 +1,1227 @@
+{
+  "by_pair": {
+    "H-F1-P1": [
+      {
+        "case_id": "H-F1-P1",
+        "field_path": "status.R1",
+        "candidate_sha256": "f7a127450e64bc4bb4bd083affd1153cf12a395166542483797e94af68dee534",
+        "source_sha256": "676e2b6e50e7cde6474015b6bb81b826814379dddf67fd897ca04efe8fdc953e",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_F1_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.36,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-F1-P1",
+        "field_path": "status.R2",
+        "candidate_sha256": "f7a127450e64bc4bb4bd083affd1153cf12a395166542483797e94af68dee534",
+        "source_sha256": "676e2b6e50e7cde6474015b6bb81b826814379dddf67fd897ca04efe8fdc953e",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_F1_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.97,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-F1-P2": [
+      {
+        "case_id": "H-F1-P2",
+        "field_path": "status.R1",
+        "candidate_sha256": "75e70005281d6076b78ef67e4d8299ddd8d25728a732240a5e978d53e1eba044",
+        "source_sha256": "676e2b6e50e7cde6474015b6bb81b826814379dddf67fd897ca04efe8fdc953e",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_F1_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.61,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-F1-P2",
+        "field_path": "status.R2",
+        "candidate_sha256": "75e70005281d6076b78ef67e4d8299ddd8d25728a732240a5e978d53e1eba044",
+        "source_sha256": "676e2b6e50e7cde6474015b6bb81b826814379dddf67fd897ca04efe8fdc953e",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_F1_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.96,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-T1-P1": [
+      {
+        "case_id": "H-T1-P1",
+        "field_path": "cause",
+        "candidate_sha256": "8f95afdaf0c0ce01235f32738e76b42338cfa9f66e22b3efccd9724d860297ba",
+        "source_sha256": "596aa1ca88f2a82cb951ebd1f9efd27401afc42c929b0ca9ba71c9d8008d32b2",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_T1_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-T1-P1",
+        "field_path": "highest_heads",
+        "candidate_sha256": "8f95afdaf0c0ce01235f32738e76b42338cfa9f66e22b3efccd9724d860297ba",
+        "source_sha256": "596aa1ca88f2a82cb951ebd1f9efd27401afc42c929b0ca9ba71c9d8008d32b2",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_T1_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-T1-P2": [
+      {
+        "case_id": "H-T1-P2",
+        "field_path": "cause",
+        "candidate_sha256": "8d3d832b1a394da5881785f7173e40af01fe7edc4e68258296edaffe1663bcf8",
+        "source_sha256": "596aa1ca88f2a82cb951ebd1f9efd27401afc42c929b0ca9ba71c9d8008d32b2",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_T1_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-T1-P2",
+        "field_path": "highest_heads",
+        "candidate_sha256": "8d3d832b1a394da5881785f7173e40af01fe7edc4e68258296edaffe1663bcf8",
+        "source_sha256": "596aa1ca88f2a82cb951ebd1f9efd27401afc42c929b0ca9ba71c9d8008d32b2",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_T1_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-U1-P1": [
+      {
+        "case_id": "H-U1-P1",
+        "field_path": "commit",
+        "candidate_sha256": "6512ec3289883a0872409c842e8c8081fa1b01d5a51fd09e65a8edff4ba51789",
+        "source_sha256": "cab24dd8340df442e1f9c520d8ba8219abdff9418f7c003d66d67cd93411c138",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_U1_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-U1-P1",
+        "field_path": "order",
+        "candidate_sha256": "6512ec3289883a0872409c842e8c8081fa1b01d5a51fd09e65a8edff4ba51789",
+        "source_sha256": "cab24dd8340df442e1f9c520d8ba8219abdff9418f7c003d66d67cd93411c138",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_U1_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-U1-P2": [
+      {
+        "case_id": "H-U1-P2",
+        "field_path": "commit",
+        "candidate_sha256": "2c08e8b985ca1e9e31300443eb00333be4296e07e4d43350f20ded691285509e",
+        "source_sha256": "cab24dd8340df442e1f9c520d8ba8219abdff9418f7c003d66d67cd93411c138",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_U1_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-U1-P2",
+        "field_path": "order",
+        "candidate_sha256": "2c08e8b985ca1e9e31300443eb00333be4296e07e4d43350f20ded691285509e",
+        "source_sha256": "cab24dd8340df442e1f9c520d8ba8219abdff9418f7c003d66d67cd93411c138",
+        "status": "complete",
+        "runId": "76b0b187-f8f5-4ce0-9f33-5d773521b2f7",
+        "item_id": "H_U1_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.75,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-G1-P1": [
+      {
+        "case_id": "H-G1-P1",
+        "field_path": "remove",
+        "candidate_sha256": "1b555008f1fa7ba4e3638d8e7443f752b96639e60f58e4cb951aa04b1317179f",
+        "source_sha256": "0b5a08e255e9918f5fd75b7a532d8b6a50d462b4f71f8347e88ffeafc10842fe",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_G1_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.94,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-G1-P1",
+        "field_path": "repair",
+        "candidate_sha256": "1b555008f1fa7ba4e3638d8e7443f752b96639e60f58e4cb951aa04b1317179f",
+        "source_sha256": "0b5a08e255e9918f5fd75b7a532d8b6a50d462b4f71f8347e88ffeafc10842fe",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_G1_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-G1-P2": [
+      {
+        "case_id": "H-G1-P2",
+        "field_path": "remove",
+        "candidate_sha256": "9d97526001835dc199d33319cab4a5441926d74c771243323b0876d5b68218c5",
+        "source_sha256": "0b5a08e255e9918f5fd75b7a532d8b6a50d462b4f71f8347e88ffeafc10842fe",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_G1_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-G1-P2",
+        "field_path": "repair",
+        "candidate_sha256": "9d97526001835dc199d33319cab4a5441926d74c771243323b0876d5b68218c5",
+        "source_sha256": "0b5a08e255e9918f5fd75b7a532d8b6a50d462b4f71f8347e88ffeafc10842fe",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_G1_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-S1-P1": [
+      {
+        "case_id": "H-S1-P1",
+        "field_path": "erase",
+        "candidate_sha256": "cf5a66cb48a0c64520eeb1320df9cc598b366ad2fac6ebc1600af95c1013b287",
+        "source_sha256": "10c8dfdef55ad52c13b803d14233051b061b1907d6876e76e839e3ef3308b114",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_S1_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-S1-P1",
+        "field_path": "steps.Q1",
+        "candidate_sha256": "cf5a66cb48a0c64520eeb1320df9cc598b366ad2fac6ebc1600af95c1013b287",
+        "source_sha256": "10c8dfdef55ad52c13b803d14233051b061b1907d6876e76e839e3ef3308b114",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_S1_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.84,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-S1-P2": [],
+    "H-R1-P1": [
+      {
+        "case_id": "H-R1-P1",
+        "field_path": "status.K1",
+        "candidate_sha256": "e383c89d86d6411aeb4fb7cceec737d61a4a6b580dbd7a53945cfa2d673a2940",
+        "source_sha256": "0690ad8d960f74041e859346a8f92fb9a517edaf29076341729d24afa629860f",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_R1_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-R1-P1",
+        "field_path": "status.K2",
+        "candidate_sha256": "e383c89d86d6411aeb4fb7cceec737d61a4a6b580dbd7a53945cfa2d673a2940",
+        "source_sha256": "0690ad8d960f74041e859346a8f92fb9a517edaf29076341729d24afa629860f",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_R1_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-R1-P2": [
+      {
+        "case_id": "H-R1-P2",
+        "field_path": "status.K1",
+        "candidate_sha256": "d214e9f28b2af869e3c6ddfe7baffd7775ca264fd41de01f9bb0ba3ceecad57c",
+        "source_sha256": "0690ad8d960f74041e859346a8f92fb9a517edaf29076341729d24afa629860f",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_R1_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-R1-P2",
+        "field_path": "status.K2",
+        "candidate_sha256": "d214e9f28b2af869e3c6ddfe7baffd7775ca264fd41de01f9bb0ba3ceecad57c",
+        "source_sha256": "0690ad8d960f74041e859346a8f92fb9a517edaf29076341729d24afa629860f",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_R1_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-F2-P1": [
+      {
+        "case_id": "H-F2-P1",
+        "field_path": "status.R1",
+        "candidate_sha256": "dde4c3d23395abace449ef8e2d759d00e19989c659606857c5696e4eb670446a",
+        "source_sha256": "3a091fa5505203c4ba501c1496db7fb5ec9e6b667b88ff4c836ced87d37d42bb",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_F2_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.81,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-F2-P1",
+        "field_path": "status.R2",
+        "candidate_sha256": "dde4c3d23395abace449ef8e2d759d00e19989c659606857c5696e4eb670446a",
+        "source_sha256": "3a091fa5505203c4ba501c1496db7fb5ec9e6b667b88ff4c836ced87d37d42bb",
+        "status": "complete",
+        "runId": "ce2eb756-d7f2-4a09-8f72-8fe7d3366803",
+        "item_id": "H_F2_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-F2-P2": [
+      {
+        "case_id": "H-F2-P2",
+        "field_path": "status.R1",
+        "candidate_sha256": "c4c6c203b9c834ce51a97dd143369392053ea791f0596400ac0a0cf302af765c",
+        "source_sha256": "3a091fa5505203c4ba501c1496db7fb5ec9e6b667b88ff4c836ced87d37d42bb",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_F2_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.26,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-F2-P2",
+        "field_path": "status.R2",
+        "candidate_sha256": "c4c6c203b9c834ce51a97dd143369392053ea791f0596400ac0a0cf302af765c",
+        "source_sha256": "3a091fa5505203c4ba501c1496db7fb5ec9e6b667b88ff4c836ced87d37d42bb",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_F2_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.82,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-T2-P1": [
+      {
+        "case_id": "H-T2-P1",
+        "field_path": "cause",
+        "candidate_sha256": "0a8e92da8b40be3ea647d7247ee243eb88962e0174aa5b17a0cd3cf4c42f4455",
+        "source_sha256": "a35e18f38342c83275057456199b0b5aa8394b481abf5f688218ff1778e693f1",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_T2_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-T2-P1",
+        "field_path": "highest_heads",
+        "candidate_sha256": "0a8e92da8b40be3ea647d7247ee243eb88962e0174aa5b17a0cd3cf4c42f4455",
+        "source_sha256": "a35e18f38342c83275057456199b0b5aa8394b481abf5f688218ff1778e693f1",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_T2_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-T2-P2": [
+      {
+        "case_id": "H-T2-P2",
+        "field_path": "cause",
+        "candidate_sha256": "5c428821154e5e58eb9aa78d1b9ab89ba3c609f5d17289c54e68f27ebfe661b5",
+        "source_sha256": "a35e18f38342c83275057456199b0b5aa8394b481abf5f688218ff1778e693f1",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_T2_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.89,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-T2-P2",
+        "field_path": "highest_heads",
+        "candidate_sha256": "5c428821154e5e58eb9aa78d1b9ab89ba3c609f5d17289c54e68f27ebfe661b5",
+        "source_sha256": "a35e18f38342c83275057456199b0b5aa8394b481abf5f688218ff1778e693f1",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_T2_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-U2-P1": [
+      {
+        "case_id": "H-U2-P1",
+        "field_path": "commit",
+        "candidate_sha256": "b1d0f76bd783aad5a6e7be3184950c7c6f3109bf43e934ec793a48c4835685e5",
+        "source_sha256": "597eaebb66382e93c3de872f58cf512f20d0e45bba394fe44e4c3357d658d381",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_U2_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-U2-P1",
+        "field_path": "order",
+        "candidate_sha256": "b1d0f76bd783aad5a6e7be3184950c7c6f3109bf43e934ec793a48c4835685e5",
+        "source_sha256": "597eaebb66382e93c3de872f58cf512f20d0e45bba394fe44e4c3357d658d381",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_U2_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-U2-P2": [
+      {
+        "case_id": "H-U2-P2",
+        "field_path": "commit",
+        "candidate_sha256": "e4433e0643373436b205e1edccd52f8a3c6886a2803a0af6dfa8a5465676ef9a",
+        "source_sha256": "597eaebb66382e93c3de872f58cf512f20d0e45bba394fe44e4c3357d658d381",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_U2_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-U2-P2",
+        "field_path": "order",
+        "candidate_sha256": "e4433e0643373436b205e1edccd52f8a3c6886a2803a0af6dfa8a5465676ef9a",
+        "source_sha256": "597eaebb66382e93c3de872f58cf512f20d0e45bba394fe44e4c3357d658d381",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_U2_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.94,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-G2-P1": [
+      {
+        "case_id": "H-G2-P1",
+        "field_path": "remove",
+        "candidate_sha256": "7d6586888a28cc21ea7c694a4c660980df67ea25f9bfab4623a700183e83afc8",
+        "source_sha256": "f0598f962737dd4d2dabda57750a4a4cb18604a2e404fbabf2c2869c9bf1db2a",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_G2_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.97,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-G2-P1",
+        "field_path": "repair",
+        "candidate_sha256": "7d6586888a28cc21ea7c694a4c660980df67ea25f9bfab4623a700183e83afc8",
+        "source_sha256": "f0598f962737dd4d2dabda57750a4a4cb18604a2e404fbabf2c2869c9bf1db2a",
+        "status": "complete",
+        "runId": "9c34f114-f63c-4d03-a422-66db2d53029b",
+        "item_id": "H_G2_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-G2-P2": [
+      {
+        "case_id": "H-G2-P2",
+        "field_path": "remove",
+        "candidate_sha256": "16d2bcd91920ef841050abc693020fdba5a08b701b5ed8f39c5ed36b737665f6",
+        "source_sha256": "f0598f962737dd4d2dabda57750a4a4cb18604a2e404fbabf2c2869c9bf1db2a",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_G2_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-G2-P2",
+        "field_path": "repair",
+        "candidate_sha256": "16d2bcd91920ef841050abc693020fdba5a08b701b5ed8f39c5ed36b737665f6",
+        "source_sha256": "f0598f962737dd4d2dabda57750a4a4cb18604a2e404fbabf2c2869c9bf1db2a",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_G2_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.94,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-S2-P1": [
+      {
+        "case_id": "H-S2-P1",
+        "field_path": "erase",
+        "candidate_sha256": "06cb34384bfa033b7bd907a2867a1f2bece5a770cc51a882569883c6f880f231",
+        "source_sha256": "9019f15d4c7374f29c1b1df03ce1cba0fa030a75cb9ba5104d4329291c6673db",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_S2_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-S2-P1",
+        "field_path": "steps.Q1",
+        "candidate_sha256": "06cb34384bfa033b7bd907a2867a1f2bece5a770cc51a882569883c6f880f231",
+        "source_sha256": "9019f15d4c7374f29c1b1df03ce1cba0fa030a75cb9ba5104d4329291c6673db",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_S2_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-S2-P2": [
+      {
+        "case_id": "H-S2-P2",
+        "field_path": "erase",
+        "candidate_sha256": "b2bab426be778a467488f772e43c144321c46a35c59946ae460015099d5f9ed5",
+        "source_sha256": "9019f15d4c7374f29c1b1df03ce1cba0fa030a75cb9ba5104d4329291c6673db",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_S2_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-S2-P2",
+        "field_path": "steps.Q1",
+        "candidate_sha256": "b2bab426be778a467488f772e43c144321c46a35c59946ae460015099d5f9ed5",
+        "source_sha256": "9019f15d4c7374f29c1b1df03ce1cba0fa030a75cb9ba5104d4329291c6673db",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_S2_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.94,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-R2-P1": [
+      {
+        "case_id": "H-R2-P1",
+        "field_path": "status.K1",
+        "candidate_sha256": "981ee4a9d0e2ff4011dc5fa7e17e31e5eb5e3863df4ce576d5ef5b5bd61fd071",
+        "source_sha256": "033164176b295a2021da89edfb545677e032fb9831a0f3a4ab9b1b430677b5e7",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_R2_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-R2-P1",
+        "field_path": "status.K2",
+        "candidate_sha256": "981ee4a9d0e2ff4011dc5fa7e17e31e5eb5e3863df4ce576d5ef5b5bd61fd071",
+        "source_sha256": "033164176b295a2021da89edfb545677e032fb9831a0f3a4ab9b1b430677b5e7",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_R2_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.97,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-R2-P2": [
+      {
+        "case_id": "H-R2-P2",
+        "field_path": "status.K1",
+        "candidate_sha256": "92da893cf4128bc775e40ed60fda1da857245da853e5fda383e0102daea43d25",
+        "source_sha256": "033164176b295a2021da89edfb545677e032fb9831a0f3a4ab9b1b430677b5e7",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_R2_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-R2-P2",
+        "field_path": "status.K2",
+        "candidate_sha256": "92da893cf4128bc775e40ed60fda1da857245da853e5fda383e0102daea43d25",
+        "source_sha256": "033164176b295a2021da89edfb545677e032fb9831a0f3a4ab9b1b430677b5e7",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_R2_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-F3-P1": [
+      {
+        "case_id": "H-F3-P1",
+        "field_path": "status.R1",
+        "candidate_sha256": "56ff591f44b9baaf29f722bcc30b9c2a7bc0977ffb4e8c13754a8c3a7037ad02",
+        "source_sha256": "aae4e305f901f7d374f29bcde5eebacf3cd9799084a2c8ee190f6aa8436879a7",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_F3_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-F3-P1",
+        "field_path": "status.R2",
+        "candidate_sha256": "56ff591f44b9baaf29f722bcc30b9c2a7bc0977ffb4e8c13754a8c3a7037ad02",
+        "source_sha256": "aae4e305f901f7d374f29bcde5eebacf3cd9799084a2c8ee190f6aa8436879a7",
+        "status": "complete",
+        "runId": "2061d336-66fa-44a1-946d-e8eae877582a",
+        "item_id": "H_F3_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-F3-P2": [
+      {
+        "case_id": "H-F3-P2",
+        "field_path": "status.R1",
+        "candidate_sha256": "0613b7842f177c24889d09921d7744fa156f5c02e7b7612eff7cbdc4b8dbee98",
+        "source_sha256": "aae4e305f901f7d374f29bcde5eebacf3cd9799084a2c8ee190f6aa8436879a7",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_F3_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.77,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-F3-P2",
+        "field_path": "status.R2",
+        "candidate_sha256": "0613b7842f177c24889d09921d7744fa156f5c02e7b7612eff7cbdc4b8dbee98",
+        "source_sha256": "aae4e305f901f7d374f29bcde5eebacf3cd9799084a2c8ee190f6aa8436879a7",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_F3_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-T3-P1": [
+      {
+        "case_id": "H-T3-P1",
+        "field_path": "cause",
+        "candidate_sha256": "f316d237eaba7b64c769fd32c380d2eefe40a25d6fd8505953986119323ed771",
+        "source_sha256": "d30902b29b846852089789a72a548d7166386cf4d5c03b97100d0ef75a420a46",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_T3_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-T3-P1",
+        "field_path": "highest_heads",
+        "candidate_sha256": "f316d237eaba7b64c769fd32c380d2eefe40a25d6fd8505953986119323ed771",
+        "source_sha256": "d30902b29b846852089789a72a548d7166386cf4d5c03b97100d0ef75a420a46",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_T3_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-T3-P2": [
+      {
+        "case_id": "H-T3-P2",
+        "field_path": "cause",
+        "candidate_sha256": "784073eec0bd2a6bf99778416d44428c06e849ebacd4210725a00a24e08aace2",
+        "source_sha256": "d30902b29b846852089789a72a548d7166386cf4d5c03b97100d0ef75a420a46",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_T3_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-T3-P2",
+        "field_path": "highest_heads",
+        "candidate_sha256": "784073eec0bd2a6bf99778416d44428c06e849ebacd4210725a00a24e08aace2",
+        "source_sha256": "d30902b29b846852089789a72a548d7166386cf4d5c03b97100d0ef75a420a46",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_T3_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-U3-P1": [
+      {
+        "case_id": "H-U3-P1",
+        "field_path": "commit",
+        "candidate_sha256": "b38585525058fdf058af7bc8d8af312dddb4c0a5aaf17180f4764b48fc05971d",
+        "source_sha256": "804f30b5519f18a6cecbe9f0414d0d37efedf14b0c0566a97f741aee1dcc3bb2",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_U3_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-U3-P1",
+        "field_path": "order",
+        "candidate_sha256": "b38585525058fdf058af7bc8d8af312dddb4c0a5aaf17180f4764b48fc05971d",
+        "source_sha256": "804f30b5519f18a6cecbe9f0414d0d37efedf14b0c0566a97f741aee1dcc3bb2",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_U3_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-U3-P2": [
+      {
+        "case_id": "H-U3-P2",
+        "field_path": "commit",
+        "candidate_sha256": "545292ef40f2528957289a4bfd7febceb71db45437aa77e70d2ed8721e8270d1",
+        "source_sha256": "804f30b5519f18a6cecbe9f0414d0d37efedf14b0c0566a97f741aee1dcc3bb2",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_U3_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-U3-P2",
+        "field_path": "order",
+        "candidate_sha256": "545292ef40f2528957289a4bfd7febceb71db45437aa77e70d2ed8721e8270d1",
+        "source_sha256": "804f30b5519f18a6cecbe9f0414d0d37efedf14b0c0566a97f741aee1dcc3bb2",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_U3_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.96,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-G3-P1": [
+      {
+        "case_id": "H-G3-P1",
+        "field_path": "remove",
+        "candidate_sha256": "a8ccfe1eedd76ce0ab5af838cb2d936631e95f2f3d6a002443c285a912d3caf3",
+        "source_sha256": "5a0f53586aded676be14ba024ecfb6fab51cc2a07744f03cfd944f730c18d026",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_G3_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.84,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-G3-P1",
+        "field_path": "repair",
+        "candidate_sha256": "a8ccfe1eedd76ce0ab5af838cb2d936631e95f2f3d6a002443c285a912d3caf3",
+        "source_sha256": "5a0f53586aded676be14ba024ecfb6fab51cc2a07744f03cfd944f730c18d026",
+        "status": "complete",
+        "runId": "4dfe1fc5-aac4-45f5-8acd-b37b2f555e30",
+        "item_id": "H_G3_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-G3-P2": [
+      {
+        "case_id": "H-G3-P2",
+        "field_path": "remove",
+        "candidate_sha256": "ac79dbcfe33816bc026d7cea76e65fef2c4677c02752a0f944a40166da917d72",
+        "source_sha256": "5a0f53586aded676be14ba024ecfb6fab51cc2a07744f03cfd944f730c18d026",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_G3_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-G3-P2",
+        "field_path": "repair",
+        "candidate_sha256": "ac79dbcfe33816bc026d7cea76e65fef2c4677c02752a0f944a40166da917d72",
+        "source_sha256": "5a0f53586aded676be14ba024ecfb6fab51cc2a07744f03cfd944f730c18d026",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_G3_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-S3-P1": [
+      {
+        "case_id": "H-S3-P1",
+        "field_path": "erase",
+        "candidate_sha256": "5044ddc49759102164fd8def3bb1a5e01cc26934eac04e78a95b8619a778878e",
+        "source_sha256": "2ccdb1cd669997ebe0da8b71852b3565b6a5bd988753113feffd3940c5018c93",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_S3_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-S3-P1",
+        "field_path": "steps.Q1",
+        "candidate_sha256": "5044ddc49759102164fd8def3bb1a5e01cc26934eac04e78a95b8619a778878e",
+        "source_sha256": "2ccdb1cd669997ebe0da8b71852b3565b6a5bd988753113feffd3940c5018c93",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_S3_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.91,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-S3-P2": [
+      {
+        "case_id": "H-S3-P2",
+        "field_path": "erase",
+        "candidate_sha256": "96b69cd7614bac6d2a31d6733251ed65b153b09b9c610bfd95cd83ff0c32d1ca",
+        "source_sha256": "2ccdb1cd669997ebe0da8b71852b3565b6a5bd988753113feffd3940c5018c93",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_S3_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-S3-P2",
+        "field_path": "steps.Q1",
+        "candidate_sha256": "96b69cd7614bac6d2a31d6733251ed65b153b09b9c610bfd95cd83ff0c32d1ca",
+        "source_sha256": "2ccdb1cd669997ebe0da8b71852b3565b6a5bd988753113feffd3940c5018c93",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_S3_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.81,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-R3-P1": [
+      {
+        "case_id": "H-R3-P1",
+        "field_path": "status.K1",
+        "candidate_sha256": "661bac91a8554790475ae259f0838902c1f8396559562d127b9e2703ae6b7a42",
+        "source_sha256": "61876a20b52704e88908ccec727c4684e4630b3aa2f9826f2fa13a35b95034e1",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_R3_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-R3-P1",
+        "field_path": "status.K2",
+        "candidate_sha256": "661bac91a8554790475ae259f0838902c1f8396559562d127b9e2703ae6b7a42",
+        "source_sha256": "61876a20b52704e88908ccec727c4684e4630b3aa2f9826f2fa13a35b95034e1",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_R3_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-R3-P2": [
+      {
+        "case_id": "H-R3-P2",
+        "field_path": "status.K1",
+        "candidate_sha256": "44fe7bb5282079eff436aa07d4215e0e95de751271459c245da299df8e29d3a7",
+        "source_sha256": "61876a20b52704e88908ccec727c4684e4630b3aa2f9826f2fa13a35b95034e1",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_R3_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-R3-P2",
+        "field_path": "status.K2",
+        "candidate_sha256": "44fe7bb5282079eff436aa07d4215e0e95de751271459c245da299df8e29d3a7",
+        "source_sha256": "61876a20b52704e88908ccec727c4684e4630b3aa2f9826f2fa13a35b95034e1",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_R3_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.97,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-F4-P1": [
+      {
+        "case_id": "H-F4-P1",
+        "field_path": "status.R1",
+        "candidate_sha256": "92afcb1f6b993da78f4f803e58c0bffbb72c37a3caef872d60398dfb9619c779",
+        "source_sha256": "2fce5223797f107c725d17417b136b3312420bdb9f2b01071a328c44b9207943",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_F4_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.91,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-F4-P1",
+        "field_path": "status.R2",
+        "candidate_sha256": "92afcb1f6b993da78f4f803e58c0bffbb72c37a3caef872d60398dfb9619c779",
+        "source_sha256": "2fce5223797f107c725d17417b136b3312420bdb9f2b01071a328c44b9207943",
+        "status": "complete",
+        "runId": "5a0d8f27-8406-4577-b4a3-ea5de711c6b9",
+        "item_id": "H_F4_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.97,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-F4-P2": [
+      {
+        "case_id": "H-F4-P2",
+        "field_path": "status.R1",
+        "candidate_sha256": "6ae4ae5d07d0e7f3ca601e3f7959139f69cca041b1faa37633aca8bd98e9b400",
+        "source_sha256": "2fce5223797f107c725d17417b136b3312420bdb9f2b01071a328c44b9207943",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_F4_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.88,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-F4-P2",
+        "field_path": "status.R2",
+        "candidate_sha256": "6ae4ae5d07d0e7f3ca601e3f7959139f69cca041b1faa37633aca8bd98e9b400",
+        "source_sha256": "2fce5223797f107c725d17417b136b3312420bdb9f2b01071a328c44b9207943",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_F4_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.95,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-T4-P1": [
+      {
+        "case_id": "H-T4-P1",
+        "field_path": "cause",
+        "candidate_sha256": "fd3fd5bec8ed741161d181b902a2351b7b3f916d48791a7250c121e9b6a79ed5",
+        "source_sha256": "a7e465daf646414633b510ed83db4f888d473a99d5be13703c1c3a5ac09e0adb",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_T4_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-T4-P1",
+        "field_path": "highest_heads",
+        "candidate_sha256": "fd3fd5bec8ed741161d181b902a2351b7b3f916d48791a7250c121e9b6a79ed5",
+        "source_sha256": "a7e465daf646414633b510ed83db4f888d473a99d5be13703c1c3a5ac09e0adb",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_T4_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.89,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-T4-P2": [
+      {
+        "case_id": "H-T4-P2",
+        "field_path": "cause",
+        "candidate_sha256": "8f41b7975d8a09ec4aa58c22ae7ab3d66e67af757457c760c7b3c36865d37c43",
+        "source_sha256": "a7e465daf646414633b510ed83db4f888d473a99d5be13703c1c3a5ac09e0adb",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_T4_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-T4-P2",
+        "field_path": "highest_heads",
+        "candidate_sha256": "8f41b7975d8a09ec4aa58c22ae7ab3d66e67af757457c760c7b3c36865d37c43",
+        "source_sha256": "a7e465daf646414633b510ed83db4f888d473a99d5be13703c1c3a5ac09e0adb",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_T4_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-U4-P1": [
+      {
+        "case_id": "H-U4-P1",
+        "field_path": "commit",
+        "candidate_sha256": "a530a9c44d61676238a2270650d4b59617367ab66542b6c865425d5912975c45",
+        "source_sha256": "015d362834c71067a71618406b354e41907a08c256076701932ff8507f12a471",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_U4_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-U4-P1",
+        "field_path": "order",
+        "candidate_sha256": "a530a9c44d61676238a2270650d4b59617367ab66542b6c865425d5912975c45",
+        "source_sha256": "015d362834c71067a71618406b354e41907a08c256076701932ff8507f12a471",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_U4_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-U4-P2": [
+      {
+        "case_id": "H-U4-P2",
+        "field_path": "commit",
+        "candidate_sha256": "7a5fb50d6a069020ecdc0136b853406bcc4dc5d0f5451a3cfad2f5dfe89fdb3b",
+        "source_sha256": "015d362834c71067a71618406b354e41907a08c256076701932ff8507f12a471",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_U4_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-U4-P2",
+        "field_path": "order",
+        "candidate_sha256": "7a5fb50d6a069020ecdc0136b853406bcc4dc5d0f5451a3cfad2f5dfe89fdb3b",
+        "source_sha256": "015d362834c71067a71618406b354e41907a08c256076701932ff8507f12a471",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_U4_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-G4-P1": [
+      {
+        "case_id": "H-G4-P1",
+        "field_path": "remove",
+        "candidate_sha256": "077fe8366cfe64aae69967cdd28be97949a47bd982b06b14f2fb32b39f221623",
+        "source_sha256": "3ba15c2921a0c2476f98a97d5dc02a34e9877ff7326e33a6834edb0429120c23",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_G4_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.97,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-G4-P1",
+        "field_path": "repair",
+        "candidate_sha256": "077fe8366cfe64aae69967cdd28be97949a47bd982b06b14f2fb32b39f221623",
+        "source_sha256": "3ba15c2921a0c2476f98a97d5dc02a34e9877ff7326e33a6834edb0429120c23",
+        "status": "complete",
+        "runId": "c7805514-dd05-4578-b7b2-befb80ace82b",
+        "item_id": "H_G4_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-G4-P2": [
+      {
+        "case_id": "H-G4-P2",
+        "field_path": "remove",
+        "candidate_sha256": "d33f0ecd4621f075ea037435b49f60432b3ce03fd4899a18063998a401a0532c",
+        "source_sha256": "3ba15c2921a0c2476f98a97d5dc02a34e9877ff7326e33a6834edb0429120c23",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_G4_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-G4-P2",
+        "field_path": "repair",
+        "candidate_sha256": "d33f0ecd4621f075ea037435b49f60432b3ce03fd4899a18063998a401a0532c",
+        "source_sha256": "3ba15c2921a0c2476f98a97d5dc02a34e9877ff7326e33a6834edb0429120c23",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_G4_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.99,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-S4-P1": [
+      {
+        "case_id": "H-S4-P1",
+        "field_path": "erase",
+        "candidate_sha256": "52c78e4c50c9804a6c18da5cda5467164d199e0bf900169080f2440f75f3bfcd",
+        "source_sha256": "7dc09d86efd35b3c36157d7a8c0c0bad9dddc8d9175c241eb25958c6e9c1382c",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_S4_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-S4-P1",
+        "field_path": "steps.Q1",
+        "candidate_sha256": "52c78e4c50c9804a6c18da5cda5467164d199e0bf900169080f2440f75f3bfcd",
+        "source_sha256": "7dc09d86efd35b3c36157d7a8c0c0bad9dddc8d9175c241eb25958c6e9c1382c",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_S4_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.98,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-S4-P2": [
+      {
+        "case_id": "H-S4-P2",
+        "field_path": "erase",
+        "candidate_sha256": "376d3beb185f97a704736b6a9e5b34079f57243e52f26f4ff53e3d2533bad569",
+        "source_sha256": "7dc09d86efd35b3c36157d7a8c0c0bad9dddc8d9175c241eb25958c6e9c1382c",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_S4_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-S4-P2",
+        "field_path": "steps.Q1",
+        "candidate_sha256": "376d3beb185f97a704736b6a9e5b34079f57243e52f26f4ff53e3d2533bad569",
+        "source_sha256": "7dc09d86efd35b3c36157d7a8c0c0bad9dddc8d9175c241eb25958c6e9c1382c",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_S4_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 0.92,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-R4-P1": [
+      {
+        "case_id": "H-R4-P1",
+        "field_path": "status.K1",
+        "candidate_sha256": "68d134a3b1e841922e8e262ecf43aa24f4f2fbaddd966f7c6183b8c1875c7c0c",
+        "source_sha256": "5e35fa141d11b11676b3636b3885dbb1e61f7d36dea4efca42c0955685a3e3b1",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_R4_P1_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-R4-P1",
+        "field_path": "status.K2",
+        "candidate_sha256": "68d134a3b1e841922e8e262ecf43aa24f4f2fbaddd966f7c6183b8c1875c7c0c",
+        "source_sha256": "5e35fa141d11b11676b3636b3885dbb1e61f7d36dea4efca42c0955685a3e3b1",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_R4_P1_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ],
+    "H-R4-P2": [
+      {
+        "case_id": "H-R4-P2",
+        "field_path": "status.K1",
+        "candidate_sha256": "2ffedac90e47554f4de152d2f5989eff2db5743abc102a08e517aec2ec311978",
+        "source_sha256": "5e35fa141d11b11676b3636b3885dbb1e61f7d36dea4efca42c0955685a3e3b1",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_R4_P2_initial_0",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      },
+      {
+        "case_id": "H-R4-P2",
+        "field_path": "status.K2",
+        "candidate_sha256": "2ffedac90e47554f4de152d2f5989eff2db5743abc102a08e517aec2ec311978",
+        "source_sha256": "5e35fa141d11b11676b3636b3885dbb1e61f7d36dea4efca42c0955685a3e3b1",
+        "status": "complete",
+        "runId": "2f458505-1003-4976-a0f1-7efac58b676e",
+        "item_id": "H_R4_P2_initial_1",
+        "choice": "supports_payload",
+        "confidence": 1,
+        "returned_model": "jev-1.13.0"
+      }
+    ]
+  }
+}

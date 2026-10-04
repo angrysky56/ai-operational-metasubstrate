@@ -1,0 +1,167 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"runId\":\"1af250b8-dce2-415c-adc1-e6eccbe7a45a\",\"status\":\"complete\",\"capability\":{\"name\":\"omkt_payload_consistency\",\"version\":1,\"hash\":\"3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544\"},\"summary\":{\"modelCalls\":12,\"httpAttempts\":12,\"cacheHits\":0,\"reportedCostUsd\":0,\"unreportedCosts\":12,\"inputTokens\":9034,\"outputTokens\":552,\"totalItems\":12,\"completedItems\":12,\"selectedIds\":[\"H_F3_P1_final_0\",\"H_F3_P1_final_1\",\"H_F3_P2_final_0\",\"H_F3_P2_final_1\",\"H_T3_P1_final_0\",\"H_T3_P1_final_1\",\"H_T3_P2_final_0\",\"H_T3_P2_final_1\",\"H_U3_P1_final_0\",\"H_U3_P1_final_1\",\"H_U3_P2_final_0\",\"H_U3_P2_final_1\"]},\"results\":[{\"id\":\"H_F3_P1_final_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":0.99,\"does_not_resolve\":0,\"contradicts_payload\":0.01},\"confidence\":0.98}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_F3_P1_final_1\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"does_not_resolve\":0.01,\"contradicts_payload\":0.01,\"supports_payload\":0.98},\"confidence\":0.98}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_F3_P2_final_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"contradicts_payload\":0.24,\"does_not_resolve\":0.17,\"supports_payload\":0.59},\"confidence\":0.39}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_F3_P2_final_1\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":0.65,\"does_not_resolve\":0.16,\"contradicts_payload\":0.19},\"confidence\":0.48}},\"cached\":false}},\"selected\":true,\"rank\":null},{\"id\":\"H_T3_P1_final_0\",\"status\":\"complete\",\"stages\":{\"review\":{\"status\":\"complete\",\"answers\":{\"relation\":{\"type\":\"choice\",\"choice\":\"supports_payload\",\"probabilities\":{\"supports_payload\":1,\"contradicts_payload\":0,\"does_not_resolve\":0},\"confidence\":1}},\"cached\":false}},\"selected\":true,\"rank\":null}],\"moreResults\":true}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "runId": "1af250b8-dce2-415c-adc1-e6eccbe7a45a",
+      "status": "complete",
+      "capability": {
+        "name": "omkt_payload_consistency",
+        "version": 1,
+        "hash": "3d4ee30843872289b08aee9c74e22cb65db405631b0fa6b06cc1ebe799623544"
+      },
+      "summary": {
+        "modelCalls": 12,
+        "httpAttempts": 12,
+        "cacheHits": 0,
+        "reportedCostUsd": 0,
+        "unreportedCosts": 12,
+        "inputTokens": 9034,
+        "outputTokens": 552,
+        "totalItems": 12,
+        "completedItems": 12,
+        "selectedIds": [
+          "H_F3_P1_final_0",
+          "H_F3_P1_final_1",
+          "H_F3_P2_final_0",
+          "H_F3_P2_final_1",
+          "H_T3_P1_final_0",
+          "H_T3_P1_final_1",
+          "H_T3_P2_final_0",
+          "H_T3_P2_final_1",
+          "H_U3_P1_final_0",
+          "H_U3_P1_final_1",
+          "H_U3_P2_final_0",
+          "H_U3_P2_final_1"
+        ]
+      },
+      "results": [
+        {
+          "id": "H_F3_P1_final_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 0.99,
+                    "does_not_resolve": 0,
+                    "contradicts_payload": 0.01
+                  },
+                  "confidence": 0.98
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_F3_P1_final_1",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "does_not_resolve": 0.01,
+                    "contradicts_payload": 0.01,
+                    "supports_payload": 0.98
+                  },
+                  "confidence": 0.98
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_F3_P2_final_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "contradicts_payload": 0.24,
+                    "does_not_resolve": 0.17,
+                    "supports_payload": 0.59
+                  },
+                  "confidence": 0.39
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_F3_P2_final_1",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 0.65,
+                    "does_not_resolve": 0.16,
+                    "contradicts_payload": 0.19
+                  },
+                  "confidence": 0.48
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        },
+        {
+          "id": "H_T3_P1_final_0",
+          "status": "complete",
+          "stages": {
+            "review": {
+              "status": "complete",
+              "answers": {
+                "relation": {
+                  "type": "choice",
+                  "choice": "supports_payload",
+                  "probabilities": {
+                    "supports_payload": 1,
+                    "contradicts_payload": 0,
+                    "does_not_resolve": 0
+                  },
+                  "confidence": 1
+                }
+              },
+              "cached": false
+            }
+          },
+          "selected": true,
+          "rank": null
+        }
+      ],
+      "moreResults": true
+    }
+  }
+}

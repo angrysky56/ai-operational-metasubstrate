@@ -1,0 +1,438 @@
+{
+  "created_at": "2026-10-04T04:37:26.383116+00:00",
+  "config": {
+    "model": "ornith-aq1.5:35b",
+    "digest": "3095dc99a4b4217ce6aa49a1d4d00aeb612b9361185d84eeb18fa013a70ca69d",
+    "backend": {
+      "version": "0.34.4"
+    },
+    "base_url": "http://127.0.0.1:11434",
+    "dataset_sha256": "fcb5bb5bd0dc50946c7a5834e9d0797486fafdf481723efe35ef31e24a22bd11",
+    "runner_sha256": "20c52610b9188c545024e27725bc198502a31a8f637af82d25f5ccfd2a7ed728",
+    "settings_lock_sha256": "2f1fa8cc237bb0cff2e25661f4e94c2017804e86e2534c8bead43bbc3b379d78",
+    "pre_output_rule_sha256": "95d604a6478404a4714affc00e278b4579a084887ed68388b19441af89c1408c",
+    "stream": true,
+    "max_attempts": 48,
+    "max_seconds": 7200,
+    "request_timeout": 900,
+    "order_seed": 20261013,
+    "think": true,
+    "options": {
+      "temperature": 0,
+      "seed": 42,
+      "num_predict": 8192,
+      "num_ctx": 16384,
+      "top_k": 20,
+      "top_p": 0.95
+    }
+  },
+  "order": [
+    {
+      "id": "H-T1-P1",
+      "case_id": "H-T1",
+      "condition": "P1"
+    },
+    {
+      "id": "H-F3-P2",
+      "case_id": "H-F3",
+      "condition": "P2"
+    },
+    {
+      "id": "H-F1-P1",
+      "case_id": "H-F1",
+      "condition": "P1"
+    },
+    {
+      "id": "H-R2-P1",
+      "case_id": "H-R2",
+      "condition": "P1"
+    },
+    {
+      "id": "H-T3-P2",
+      "case_id": "H-T3",
+      "condition": "P2"
+    },
+    {
+      "id": "H-U3-P1",
+      "case_id": "H-U3",
+      "condition": "P1"
+    },
+    {
+      "id": "H-F4-P2",
+      "case_id": "H-F4",
+      "condition": "P2"
+    },
+    {
+      "id": "H-U4-P1",
+      "case_id": "H-U4",
+      "condition": "P1"
+    },
+    {
+      "id": "H-S1-P1",
+      "case_id": "H-S1",
+      "condition": "P1"
+    },
+    {
+      "id": "H-S1-P2",
+      "case_id": "H-S1",
+      "condition": "P2"
+    },
+    {
+      "id": "H-G4-P2",
+      "case_id": "H-G4",
+      "condition": "P2"
+    },
+    {
+      "id": "H-R1-P2",
+      "case_id": "H-R1",
+      "condition": "P2"
+    },
+    {
+      "id": "H-G4-P1",
+      "case_id": "H-G4",
+      "condition": "P1"
+    },
+    {
+      "id": "H-U2-P2",
+      "case_id": "H-U2",
+      "condition": "P2"
+    },
+    {
+      "id": "H-U2-P1",
+      "case_id": "H-U2",
+      "condition": "P1"
+    },
+    {
+      "id": "H-F2-P2",
+      "case_id": "H-F2",
+      "condition": "P2"
+    },
+    {
+      "id": "H-S4-P2",
+      "case_id": "H-S4",
+      "condition": "P2"
+    },
+    {
+      "id": "H-R1-P1",
+      "case_id": "H-R1",
+      "condition": "P1"
+    },
+    {
+      "id": "H-G2-P1",
+      "case_id": "H-G2",
+      "condition": "P1"
+    },
+    {
+      "id": "H-U1-P2",
+      "case_id": "H-U1",
+      "condition": "P2"
+    },
+    {
+      "id": "H-G1-P2",
+      "case_id": "H-G1",
+      "condition": "P2"
+    },
+    {
+      "id": "H-S2-P2",
+      "case_id": "H-S2",
+      "condition": "P2"
+    },
+    {
+      "id": "H-F3-P1",
+      "case_id": "H-F3",
+      "condition": "P1"
+    },
+    {
+      "id": "H-R3-P1",
+      "case_id": "H-R3",
+      "condition": "P1"
+    },
+    {
+      "id": "H-R4-P1",
+      "case_id": "H-R4",
+      "condition": "P1"
+    },
+    {
+      "id": "H-R2-P2",
+      "case_id": "H-R2",
+      "condition": "P2"
+    },
+    {
+      "id": "H-G3-P2",
+      "case_id": "H-G3",
+      "condition": "P2"
+    },
+    {
+      "id": "H-S3-P2",
+      "case_id": "H-S3",
+      "condition": "P2"
+    },
+    {
+      "id": "H-S3-P1",
+      "case_id": "H-S3",
+      "condition": "P1"
+    },
+    {
+      "id": "H-R3-P2",
+      "case_id": "H-R3",
+      "condition": "P2"
+    },
+    {
+      "id": "H-G2-P2",
+      "case_id": "H-G2",
+      "condition": "P2"
+    },
+    {
+      "id": "H-S4-P1",
+      "case_id": "H-S4",
+      "condition": "P1"
+    },
+    {
+      "id": "H-U4-P2",
+      "case_id": "H-U4",
+      "condition": "P2"
+    },
+    {
+      "id": "H-T2-P1",
+      "case_id": "H-T2",
+      "condition": "P1"
+    },
+    {
+      "id": "H-F1-P2",
+      "case_id": "H-F1",
+      "condition": "P2"
+    },
+    {
+      "id": "H-U1-P1",
+      "case_id": "H-U1",
+      "condition": "P1"
+    },
+    {
+      "id": "H-T2-P2",
+      "case_id": "H-T2",
+      "condition": "P2"
+    },
+    {
+      "id": "H-T1-P2",
+      "case_id": "H-T1",
+      "condition": "P2"
+    },
+    {
+      "id": "H-T4-P1",
+      "case_id": "H-T4",
+      "condition": "P1"
+    },
+    {
+      "id": "H-R4-P2",
+      "case_id": "H-R4",
+      "condition": "P2"
+    },
+    {
+      "id": "H-T3-P1",
+      "case_id": "H-T3",
+      "condition": "P1"
+    },
+    {
+      "id": "H-G1-P1",
+      "case_id": "H-G1",
+      "condition": "P1"
+    },
+    {
+      "id": "H-G3-P1",
+      "case_id": "H-G3",
+      "condition": "P1"
+    },
+    {
+      "id": "H-S2-P1",
+      "case_id": "H-S2",
+      "condition": "P1"
+    },
+    {
+      "id": "H-F4-P1",
+      "case_id": "H-F4",
+      "condition": "P1"
+    },
+    {
+      "id": "H-F2-P1",
+      "case_id": "H-F2",
+      "condition": "P1"
+    },
+    {
+      "id": "H-U3-P2",
+      "case_id": "H-U3",
+      "condition": "P2"
+    },
+    {
+      "id": "H-T4-P2",
+      "case_id": "H-T4",
+      "condition": "P2"
+    }
+  ],
+  "model_metadata": {
+    "name": "ornith-aq1.5:35b",
+    "model": "ornith-aq1.5:35b",
+    "modified_at": "2026-09-09T13:47:33.321503374-06:00",
+    "size": 24617695011,
+    "digest": "3095dc99a4b4217ce6aa49a1d4d00aeb612b9361185d84eeb18fa013a70ca69d",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35moe",
+      "families": [
+        "qwen35moe"
+      ],
+      "parameter_size": "35.5B",
+      "quantization_level": "Q6_K",
+      "context_length": 262144,
+      "embedding_length": 2048
+    },
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion",
+      "vision"
+    ]
+  },
+  "show": {
+    "modelfile": "# Modelfile generated by \"ollama show\"\n# To build a new Modelfile based on this, replace FROM with:\n# FROM ornith-aq1.5:35b\n\nFROM /usr/share/ollama/.ollama/models/blobs/sha256-c83373e4c502c6d4929339406ffbb1f442598b153a3ade02b628752e00a282fd\nFROM /usr/share/ollama/.ollama/models/blobs/sha256-e277123529451fbcff6d880ad5bd7ada999f9d5e6339ba3639d06c5cef4763b1\nTEMPLATE {{ .Prompt }}\nPARAMETER top_k 20\nPARAMETER top_p 0.95\nPARAMETER draft_num_predict 0\nPARAMETER num_ctx 16384\nPARAMETER num_predict 8192\nPARAMETER temperature 0.6\n",
+    "parameters": "num_predict                    8192\ntemperature                    0.6\ntop_k                          20\ntop_p                          0.95\ndraft_num_predict              0\nnum_ctx                        16384",
+    "template": "{%- set image_count = namespace(value=0) %}\n{%- set video_count = namespace(value=0) %}\n{%- macro render_content(content, do_vision_count, is_system_content=false) %}\n    {%- if content is string %}\n        {{- content }}\n    {%- elif content is iterable and content is not mapping %}\n        {%- for item in content %}\n            {%- if 'image' in item or 'image_url' in item or item.type == 'image' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain images.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set image_count.value = image_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Picture ' ~ image_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|image_pad|><|vision_end|>' }}\n            {%- elif 'video' in item or item.type == 'video' %}\n                {%- if is_system_content %}\n                    {{- raise_exception('System message cannot contain videos.') }}\n                {%- endif %}\n                {%- if do_vision_count %}\n                    {%- set video_count.value = video_count.value + 1 %}\n                {%- endif %}\n                {%- if add_vision_id %}\n                    {{- 'Video ' ~ video_count.value ~ ': ' }}\n                {%- endif %}\n                {{- '<|vision_start|><|video_pad|><|vision_end|>' }}\n            {%- elif 'text' in item %}\n                {{- item.text }}\n            {%- else %}\n                {{- raise_exception('Unexpected item type in content.') }}\n            {%- endif %}\n        {%- endfor %}\n    {%- elif content is none or content is undefined %}\n        {{- '' }}\n    {%- else %}\n        {{- raise_exception('Unexpected content type.') }}\n    {%- endif %}\n{%- endmacro %}\n{%- if not messages %}\n    {{- raise_exception('No messages provided.') }}\n{%- endif %}\n{%- if tools and tools is iterable and tools is not mapping %}\n    {{- '<|im_start|>system\\n' }}\n    {{- \"# Tools\\n\\nYou have access to the following functions:\\n\\n<tools>\" }}\n    {%- for tool in tools %}\n        {{- \"\\n\" }}\n        {{- tool | tojson }}\n    {%- endfor %}\n    {{- \"\\n</tools>\" }}\n    {{- '\\n\\nIf you choose to call a function ONLY reply in the following format with NO suffix:\\n\\n<tool_call>\\n<function=example_function_name>\\n<parameter=example_parameter_1>\\nvalue_1\\n</parameter>\\n<parameter=example_parameter_2>\\nThis is the value for the second parameter\\nthat can span\\nmultiple lines\\n</parameter>\\n</function>\\n</tool_call>\\n\\n<IMPORTANT>\\nReminder:\\n- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags\\n- Required parameters MUST be specified\\n- You may provide optional reasoning for your function call in natural language BEFORE the function call, but NOT after\\n- If there is no function call available, answer the question like normal with your current knowledge and do not tell the user about function calls\\n</IMPORTANT>' }}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {%- if content %}\n            {{- '\\n\\n' + content }}\n        {%- endif %}\n    {%- endif %}\n    {{- '<|im_end|>\\n' }}\n{%- else %}\n    {%- if messages[0].role == 'system' %}\n        {%- set content = render_content(messages[0].content, false, true)|trim %}\n        {{- '<|im_start|>system\\n' + content + '<|im_end|>\\n' }}\n    {%- endif %}\n{%- endif %}\n{%- set ns = namespace(multi_step_tool=true, last_query_index=messages|length - 1) %}\n{%- for message in messages[::-1] %}\n    {%- set index = (messages|length - 1) - loop.index0 %}\n    {%- if ns.multi_step_tool and message.role == \"user\" %}\n        {%- set content = render_content(message.content, false)|trim %}\n        {%- if not(content.startswith('<tool_response>') and content.endswith('</tool_response>')) %}\n            {%- set ns.multi_step_tool = false %}\n            {%- set ns.last_query_index = index %}\n        {%- endif %}\n    {%- endif %}\n{%- endfor %}\n{%- if ns.multi_step_tool %}\n    {{- raise_exception('No user query found in messages.') }}\n{%- endif %}\n{%- for message in messages %}\n    {%- set content = render_content(message.content, true)|trim %}\n    {%- if message.role == \"system\" %}\n        {%- if not loop.first %}\n            {{- raise_exception('System message must be at the beginning.') }}\n        {%- endif %}\n    {%- elif message.role == \"user\" %}\n        {{- '<|im_start|>' + message.role + '\\n' + content + '<|im_end|>' + '\\n' }}\n    {%- elif message.role == \"assistant\" %}\n        {%- set reasoning_content = '' %}\n        {%- if message.reasoning_content is string %}\n            {%- set reasoning_content = message.reasoning_content %}\n        {%- else %}\n            {%- if '</think>' in content %}\n                {%- set reasoning_content = content.split('</think>')[0].rstrip('\\n').split('<think>')[-1].lstrip('\\n') %}\n                {%- set content = content.split('</think>')[-1].lstrip('\\n') %}\n            {%- endif %}\n        {%- endif %}\n        {%- set reasoning_content = reasoning_content|trim %}\n        {%- if (preserve_thinking is defined and preserve_thinking is true) or (loop.index0 > ns.last_query_index) %}\n            {{- '<|im_start|>' + message.role + '\\n<think>\\n' + reasoning_content + '\\n</think>\\n\\n' + content }}\n        {%- else %}\n            {{- '<|im_start|>' + message.role + '\\n' + content }}\n        {%- endif %}\n        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}\n            {%- for tool_call in message.tool_calls %}\n                {%- if tool_call.function is defined %}\n                    {%- set tool_call = tool_call.function %}\n                {%- endif %}\n                {%- if loop.first %}\n                    {%- if content|trim %}\n                        {{- '\\n\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- else %}\n                        {{- '<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                    {%- endif %}\n                {%- else %}\n                    {{- '\\n<tool_call>\\n<function=' + tool_call.name + '>\\n' }}\n                {%- endif %}\n                {%- if tool_call.arguments is defined %}\n                    {%- for args_name, args_value in tool_call.arguments|items %}\n                        {{- '<parameter=' + args_name + '>\\n' }}\n                        {%- set args_value = args_value | string if args_value is string else args_value | tojson | safe %}\n                        {{- args_value }}\n                        {{- '\\n</parameter>\\n' }}\n                    {%- endfor %}\n                {%- endif %}\n                {{- '</function>\\n</tool_call>' }}\n            {%- endfor %}\n        {%- endif %}\n        {{- '<|im_end|>\\n' }}\n    {%- elif message.role == \"tool\" %}\n        {%- if loop.previtem and loop.previtem.role != \"tool\" %}\n            {{- '<|im_start|>user' }}\n        {%- endif %}\n        {{- '\\n<tool_response>\\n' }}\n        {{- content }}\n        {{- '\\n</tool_response>' }}\n        {%- if not loop.last and loop.nextitem.role != \"tool\" %}\n            {{- '<|im_end|>\\n' }}\n        {%- elif loop.last %}\n            {{- '<|im_end|>\\n' }}\n        {%- endif %}\n    {%- else %}\n        {{- raise_exception('Unexpected message role.') }}\n    {%- endif %}\n{%- endfor %}\n{%- if add_generation_prompt %}\n    {{- '<|im_start|>assistant\\n' }}\n    {%- if enable_thinking is defined and enable_thinking is false %}\n        {{- '<think>\\n\\n</think>\\n\\n' }}\n    {%- else %}\n        {{- '<think>\\n' }}\n    {%- endif %}\n{%- endif %}",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35moe",
+      "families": [
+        "qwen35moe"
+      ],
+      "parameter_size": "35.5B",
+      "quantization_level": "Q6_K"
+    },
+    "model_info": {
+      "general.architecture": "qwen35moe",
+      "general.file_type": 18,
+      "general.license": "mit",
+      "general.license.link": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE",
+      "general.parameter_count": 35505251456,
+      "general.quantization_version": 2,
+      "general.sampling.temp": 1,
+      "general.sampling.top_k": 20,
+      "general.sampling.top_p": 0.95,
+      "general.size_label": "256x2.6B",
+      "general.tags": [
+        "text-generation"
+      ],
+      "general.type": "model",
+      "qwen35moe.attention.head_count": 16,
+      "qwen35moe.attention.head_count_kv": 2,
+      "qwen35moe.attention.key_length": 256,
+      "qwen35moe.attention.layer_norm_rms_epsilon": 1e-06,
+      "qwen35moe.attention.value_length": 256,
+      "qwen35moe.block_count": 41,
+      "qwen35moe.context_length": 262144,
+      "qwen35moe.embedding_length": 2048,
+      "qwen35moe.expert_count": 256,
+      "qwen35moe.expert_feed_forward_length": 512,
+      "qwen35moe.expert_shared_feed_forward_length": 512,
+      "qwen35moe.expert_used_count": 8,
+      "qwen35moe.full_attention_interval": 4,
+      "qwen35moe.nextn_predict_layers": 1,
+      "qwen35moe.rope.dimension_count": 64,
+      "qwen35moe.rope.dimension_sections": [
+        11,
+        11,
+        10,
+        0
+      ],
+      "qwen35moe.rope.freq_base": 10000000,
+      "qwen35moe.ssm.conv_kernel": 4,
+      "qwen35moe.ssm.group_count": 16,
+      "qwen35moe.ssm.inner_size": 4096,
+      "qwen35moe.ssm.state_size": 128,
+      "qwen35moe.ssm.time_step_rank": 32,
+      "tokenizer.ggml.add_bos_token": false,
+      "tokenizer.ggml.bos_token_id": 248044,
+      "tokenizer.ggml.eos_token_id": 248046,
+      "tokenizer.ggml.merges": [],
+      "tokenizer.ggml.model": "gpt2",
+      "tokenizer.ggml.padding_token_id": 248044,
+      "tokenizer.ggml.pre": "qwen35",
+      "tokenizer.ggml.token_type": [],
+      "tokenizer.ggml.tokens": []
+    },
+    "projector_info": {
+      "clip.has_vision_encoder": true,
+      "clip.projector_type": "qwen3vl_merger",
+      "clip.use_gelu": true,
+      "clip.vision.attention.head_count": 16,
+      "clip.vision.attention.layer_norm_epsilon": 1e-06,
+      "clip.vision.block_count": 27,
+      "clip.vision.embedding_length": 1152,
+      "clip.vision.feed_forward_length": 4304,
+      "clip.vision.image_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "clip.vision.image_size": 768,
+      "clip.vision.image_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "clip.vision.is_deepstack_layers": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "clip.vision.patch_size": 16,
+      "clip.vision.projection_dim": 2048,
+      "clip.vision.spatial_merge_size": 2,
+      "general.architecture": "clip",
+      "general.file_type": 1,
+      "general.license": "mit",
+      "general.license.link": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B/blob/main/LICENSE",
+      "general.name": "Hf",
+      "general.parameter_count": 446571248,
+      "general.quantization_version": 2,
+      "general.sampling.temp": 1,
+      "general.sampling.top_k": 20,
+      "general.sampling.top_p": 0.95,
+      "general.size_label": "447M",
+      "general.tags": [
+        "text-generation"
+      ],
+      "general.type": "mmproj"
+    },
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion",
+      "vision"
+    ],
+    "modified_at": "2026-09-09T13:47:33.321503374-06:00"
+  }
+}
